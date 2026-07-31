@@ -54,6 +54,63 @@
       "pushed_time": "2026-07-31T06:57:07.492096+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2505.16630",
+      "title": "SoccerChat: Integrating Multimodal Data for Enhanced Soccer Game Understanding",
+      "authors": [
+        "Sushant Gautam",
+        "Cise Midoglu",
+        "Vajira Thambawita",
+        "Michael A. Riegler",
+        "Pål Halvorsen",
+        "Mubarak Shah"
+      ],
+      "abstract": "The integration of artificial intelligence in sports analytics has transformed soccer video understanding, enabling real-time, automated insights into complex game dynamics. Traditional approaches rely on isolated data streams, limiting their effectiveness in capturing the full context of a match. To address this, we introduce SoccerChat, a multimodal conversational AI framework that integrates visual and textual data for enhanced soccer video comprehension. Leveraging the extensive SoccerNet dataset, enriched with jersey color annotations and automatic speech recognition (ASR) transcripts, SoccerChat is fine-tuned on a structured video instruction dataset to facilitate accurate game understanding, event classification, and referee decision making. We benchmark SoccerChat on action classification and referee decision-making tasks, demonstrating its performance in general soccer event comprehension while maintaining competitive accuracy in referee decision making. Our findings highlight the importance of multimodal integration in advancing soccer analytics, paving the way for more interactive and explainable AI-driven sports analysis. https://github.com/simula/SoccerChat",
+      "published": "2025-05-22T13:01:51+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2505.16630v1",
+      "first_seen_time": "2026-07-31T07:46:19.461224+00:00",
+      "pushed_time": "2026-07-31T07:43:34.468415+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2505.13860",
+      "title": "Domain Adaptation of VLM for Soccer Video Understanding",
+      "authors": [
+        "Tiancheng Jiang",
+        "Henry Wang",
+        "Md Sirajus Salekin",
+        "Parmida Atighehchian",
+        "Shinan Zhang"
+      ],
+      "abstract": "Vision Language Models (VLMs) have demonstrated strong performance in multi-modal tasks by effectively aligning visual and textual representations. However, most video understanding VLM research has been domain-agnostic, leaving the understanding of their transfer learning capability to specialized domains under-explored. In this work, we address this by exploring the adaptability of open-source VLMs to specific domains, and focusing on soccer as an initial case study. Our approach uses large-scale soccer datasets and LLM to create instruction-following data, and use them to iteratively fine-tune the general-domain VLM in a curriculum learning fashion (first teaching the model key soccer concepts to then question answering tasks). The final adapted model, trained using a curated dataset of 20k video clips, exhibits significant improvement in soccer-specific tasks compared to the base model, with a 37.5% relative improvement for the visual question-answering task and an accuracy improvement from 11.8% to 63.5% for the downstream soccer action classification task.",
+      "published": "2025-05-20T03:12:21+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2505.13860v2",
+      "first_seen_time": "2026-07-31T07:46:19.461748+00:00",
+      "pushed_time": "2026-07-31T07:43:34.468415+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2412.01820",
+      "title": "Towards Universal Soccer Video Understanding",
+      "authors": [
+        "Jiayuan Rao",
+        "Haoning Wu",
+        "Hao Jiang",
+        "Ya Zhang",
+        "Yanfeng Wang",
+        "Weidi Xie"
+      ],
+      "abstract": "As a globally celebrated sport, soccer has attracted widespread interest from fans all over the world. This paper aims to develop a comprehensive multi-modal framework for soccer video understanding. Specifically, we make the following contributions in this paper: (i) we introduce SoccerReplay-1988, the largest multi-modal soccer dataset to date, featuring videos and detailed annotations from 1,988 complete matches, with an automated annotation pipeline; (ii) we present an advanced soccer-specific visual encoder, MatchVision, which leverages spatiotemporal information across soccer videos and excels in various downstream tasks; (iii) we conduct extensive experiments and ablation studies on event classification, commentary generation, and multi-view foul recognition. MatchVision demonstrates state-of-the-art performance on all of them, substantially outperforming existing models, which highlights the superiority of our proposed data and model. We believe that this work will offer a standard paradigm for sports understanding research.",
+      "published": "2024-12-02T18:58:04+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2412.01820v3",
+      "first_seen_time": "2026-07-31T07:46:19.462270+00:00",
+      "pushed_time": "2026-07-31T07:43:34.468415+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
-  ]
+  ],
+  "last_email_sent_time": "2026-07-31T07:43:34.468415+00:00"
 }
