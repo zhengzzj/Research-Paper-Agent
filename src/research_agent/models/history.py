@@ -1,0 +1,2 @@
+"""History record model definitions."""
+

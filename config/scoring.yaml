@@ -1,0 +1,51 @@
+weights:
+  research_relevance: 0.40
+  author_institution_reputation: 0.25
+  venue_quality: 0.20
+  community_signal: 0.15
+
+reputation:
+  institutions:
+    - MIT
+    - Stanford
+    - Berkeley
+    - Carnegie Mellon University
+    - CMU
+    - University of Washington
+    - Oxford
+    - Cambridge
+    - TUM
+    - DeepMind
+    - Google Research
+    - Microsoft Research
+    - Meta AI
+    - NVIDIA
+    - Tsinghua University
+    - Peking University
+    - Shanghai Jiao Tong University
+    - Zhejiang University
+    - University of Chinese Academy of Sciences
+
+venues:
+  top_tier:
+    - CVPR
+    - ICCV
+    - ECCV
+    - NeurIPS
+    - ICLR
+    - AAAI
+    - ACM MM
+    - CHI
+    - VIS
+    - PacificVis
+
+community_signal:
+  github_bonus_enabled: true
+  official_code_bonus_enabled: true
+  active_maintenance_bonus_enabled: true
+
+deduplication:
+  title_similarity_threshold: 0.92
+  semantic_similarity_threshold: 0.88
+  author_overlap_threshold: 0.50
+

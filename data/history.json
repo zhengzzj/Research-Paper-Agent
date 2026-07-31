@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "arxiv_id": "2607.10990",
+      "title": "TreeSoc: Tree-Structured Dynamic Reasoning and Tool Synergy for Soccer Video Understanding",
+      "authors": [
+        "Thanh-Nhan Vo",
+        "Thanh-Khoi Nguyen",
+        "Trong-Thuan Nguyen",
+        "Trung-Hoang Le",
+        "Minh-Triet Tran"
+      ],
+      "abstract": "Automated understanding of complex soccer scenarios from video remains a significant challenge for contemporary vision-language models (VLMs), which suffer from shallow cross-modal alignment and exhibit fundamental limitations in multi-step reasoning and coordinated tool integration. We present TreeSoc, a structured reasoning framework that reformulates soccer video question answering as a hierarchical search problem rather than a single-pass prediction. Specifically, TreeSoc employs a dynamic depth-first search (DFS) mechanism that decomposes complex queries into sequentially ordered sub-tasks, enabling iterative reasoning refinement through explicit intermediate states. This tree-structured decomposition naturally supports adaptive tool routing, wherein domain-specific modules are selectively activated and their outputs incorporated at each reasoning node to produce contextually grounded predictions. On SoccerBench, TreeSoc achieves state-of-the-art performance, with accuracies of 85.2%, 87.4%, and 82.2% on TextQA, ImageQA, and VideoQA, respectively. Additionally, TreeSoc further demonstrates strong cross-domain generalization, attaining 74.16% accuracy on NExT-QA. These results establish structured, tool-augmented tree reasoning as an effective paradigm for robust video understanding. Code is available at: https://github.com/thanhnhan29/TreeSoc.",
+      "published": "2026-07-13T01:27:20+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2607.10990v1",
+      "first_seen_time": "2026-07-31T06:57:07.465582+00:00",
+      "pushed_time": "2026-07-31T06:57:07.465582+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2605.09598",
+      "title": "SoccerLens: Grounded Soccer Video Understanding Beyond Accuracy",
+      "authors": [
+        "Ismael Elsharkawi",
+        "Ahmed Sait",
+        "Silvio Giancola",
+        "Bernard Ghanem",
+        "Hossam Sharara",
+        "Abdelrahman Eldesokey"
+      ],
+      "abstract": "Vision-language models (VLMs) have recently shown strong potential in soccer video understanding. However, given the high complexity of soccer videos due to large viewpoint variations, rapid shot transitions, and cluttered scenes, it remains unclear on whether VLMs rely on meaningful visual evidence or exploit spurious correlations and shortcut learning. Existing evaluation protocols focus primarily on classification accuracy and do not assess visual grounding. To address this limitation, we introduce SoccerLens, a benchmark for grounded soccer video understanding. The benchmark contains annotated video segments spanning $13$ common soccer events, with structured visual cues organized into three levels of semantic relevance. We further extend the attribution method of Chefer [arXiv:2103.15679] to jointly model spatial and temporal attention, and introduce evaluation metrics that measure whether model attention aligns with annotated cues or drifts toward spurious regions. Our evaluation of state-of-the-art soccer VLMs shows that, despite strong classification accuracy, current models fail to exceed $50\\%$ grounding performance even under the loosest cue definitions and consistently underutilize temporal information. These results reveal a substantial gap between predictive performance and true visual grounding, highlighting the need for grounded evaluation in complex spatio-temporal domains such as soccer.",
+      "published": "2026-05-10T15:18:08+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2605.09598v2",
+      "first_seen_time": "2026-07-31T06:57:07.481094+00:00",
+      "pushed_time": "2026-07-31T06:57:07.481094+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2511.16183",
+      "title": "FOOTPASS: A Multi-Modal Multi-Agent Tactical Context Dataset for Play-by-Play Action Spotting in Soccer Broadcast Videos",
+      "authors": [
+        "Jeremie Ochin",
+        "Raphael Chekroun",
+        "Bogdan Stanciulescu",
+        "Sotiris Manitsaris"
+      ],
+      "abstract": "Soccer video understanding has motivated the creation of datasets for tasks such as temporal action localization, spatiotemporal action detection (STAD), or multiobject tracking (MOT). The annotation of structured sequences of events (who does what, when, and where) used for soccer analytics requires a holistic approach that integrates both STAD and MOT. However, current action recognition methods remain insufficient for constructing reliable play-by-play data and are typically used to assist rather than fully automate annotation. Parallel research has advanced tactical modeling, trajectory forecasting, and performance analysis, all grounded in game-state and play-by-play data. This motivates leveraging tactical knowledge as a prior to support computer-vision-based predictions, enabling more automated and reliable extraction of play-by-play data. We introduce Footovision Play-by-Play Action Spotting in Soccer Dataset (FOOTPASS), the first benchmark for play-by-play action spotting over entire soccer matches in a multi-modal, multi-agent tactical context. It enables the development of methods for player-centric action spotting that exploit both outputs from computer-vision tasks (e.g., tracking, identification) and prior knowledge of soccer, including its tactical regularities over long time horizons, to generate reliable play-by-play data streams. These streams form an essential input for data-driven sports analytics.",
+      "published": "2025-11-20T09:42:28+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2511.16183v1",
+      "first_seen_time": "2026-07-31T06:57:07.492096+00:00",
+      "pushed_time": "2026-07-31T06:57:07.492096+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    }
+  ]
+}

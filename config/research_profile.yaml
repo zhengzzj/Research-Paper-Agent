@@ -1,0 +1,48 @@
+profile_name: ai_sports_research
+
+primary_topics:
+  - computational sports
+  - soccer video understanding
+  - soccer tactical analysis
+  - sports data analytics
+  - video retrieval
+  - temporal grounding
+  - video event detection
+  - multimodal large language models
+  - LLM agent
+  - AI for Science
+  - visual analytics
+  - immersive analytics
+  - human-computer interaction
+
+search_keywords:
+  - soccer video understanding
+  - football analytics
+  - tactical analysis
+  - sports AI
+  - video agent
+  - multimodal LLM
+  - temporal grounding
+  - event detection
+  - video reasoning
+  - visual analytics
+  - immersive analytics
+  - human-AI interaction
+  - large language model agent
+  - general computer vision
+  - general machine learning
+
+high_priority_research_angles:
+  - soccer video retrieval
+  - soccer tactical understanding
+  - video agents
+  - multimodal reasoning
+  - sports foundation models
+  - AI-assisted sports analytics
+
+negative_topics:
+  - medical imaging
+  - molecular biology
+  - pure hardware architecture
+  - unrelated reinforcement learning benchmarks
+

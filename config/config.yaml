@@ -1,0 +1,37 @@
+agent:
+  run_interval_days: 4
+  timezone: Asia/Shanghai
+  max_papers_per_run: 3
+  min_papers_per_run: 1
+  min_relevance_score: 60
+  min_quality_score: 70
+  avoid_filler_recommendations: true
+
+sources:
+  arxiv:
+    enabled: true
+    max_results_per_keyword: 20
+    sort_by: submittedDate
+    sort_order: descending
+    categories:
+      - cs.CV
+      - cs.AI
+      - cs.CL
+      - cs.HC
+      - cs.LG
+
+analysis:
+  provider: deepseek
+  model: deepseek-chat
+  language: zh-CN
+  parse_pdf: true
+  fallback_to_abstract_when_pdf_parse_fails: true
+
+email:
+  subject_prefix: AI Sports Research Update
+  template_path: templates/email_report.html
+
+memory:
+  history_path: data/history.json
+  update_only_after_email_success: true
+
