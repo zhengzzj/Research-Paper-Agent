@@ -1,5 +1,5 @@
 agent:
-  run_interval_days: 4
+  run_interval_days: 1
   timezone: Asia/Shanghai
   max_papers_per_run: 3
   min_papers_per_run: 1
