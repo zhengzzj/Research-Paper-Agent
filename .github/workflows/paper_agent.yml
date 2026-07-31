@@ -2,8 +2,9 @@ name: Paper Agent
 
 on:
   schedule:
-    # Run daily; the agent should enforce config.agent.run_interval_days.
-    - cron: "0 8 * * *"
+    # Run daily at 00:00 UTC, which is 08:00 in Asia/Shanghai.
+    # The agent enforces config.agent.run_interval_days before doing work.
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 permissions:

@@ -7,7 +7,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from research_agent.memory.history import add_paper, is_duplicate, load_history
+from research_agent.memory.history import add_paper, get_last_email_sent_time, is_duplicate, load_history, mark_email_sent
 from research_agent.models.paper import Paper
 
 
@@ -18,7 +18,7 @@ class HistoryMemoryTests(unittest.TestCase):
 
             history = load_history(history_path)
 
-            self.assertEqual(history, {"schema_version": 1, "records": []})
+            self.assertEqual(history, {"schema_version": 1, "last_email_sent_time": None, "records": []})
 
     def test_is_duplicate_matches_exact_arxiv_id(self) -> None:
         history = {
@@ -60,6 +60,26 @@ class HistoryMemoryTests(unittest.TestCase):
 
             saved = json.loads(history_path.read_text(encoding="utf-8"))
             self.assertEqual(len(saved["records"]), 1)
+
+    def test_mark_email_sent_updates_last_email_sent_time(self) -> None:
+        with tempfile.TemporaryDirectory() as temp_dir:
+            history_path = Path(temp_dir) / "history.json"
+
+            mark_email_sent(history_path=history_path, sent_time="2024-01-05T00:00:00+00:00")
+            history = load_history(history_path)
+
+            self.assertEqual(get_last_email_sent_time(history), "2024-01-05T00:00:00+00:00")
+
+    def test_get_last_email_sent_time_falls_back_to_latest_pushed_time(self) -> None:
+        history = {
+            "schema_version": 1,
+            "records": [
+                {"arxiv_id": "1", "pushed_time": "2024-01-01T00:00:00+00:00"},
+                {"arxiv_id": "2", "pushed_time": "2024-01-03T00:00:00+00:00"},
+            ],
+        }
+
+        self.assertEqual(get_last_email_sent_time(history), "2024-01-03T00:00:00+00:00")
 
     @staticmethod
     def _paper(arxiv_id: str = "2401.12345") -> Paper:

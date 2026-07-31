@@ -96,3 +96,20 @@ draft.
 
 Next implementation target: Phase 1 MVP closed loop. See
 [`docs/ROADMAP.md`](docs/ROADMAP.md).
+
+## Schedule
+
+GitHub Actions is configured to trigger every day at `00:00 UTC`, which is
+`08:00` in `Asia/Shanghai`.
+
+The agent then checks `config/config.yaml`:
+
+```yaml
+agent:
+  run_interval_days: 4
+  timezone: Asia/Shanghai
+```
+
+Only when at least 4 calendar days have passed since the last successful report
+email will the pipeline fetch papers, analyze them, send an email, and update
+`data/history.json`.

@@ -24,8 +24,12 @@ GitHub Actions
 ## Runtime Boundaries
 
 - GitHub Actions is the scheduler and runtime environment.
-- The workflow may trigger daily; the agent should enforce the configured
-  research update interval in `config/config.yaml`.
+- The workflow triggers daily at `00:00 UTC`, which is `08:00` in
+  `Asia/Shanghai`.
+- The agent enforces the configured research update interval in
+  `config/config.yaml` before fetching arXiv or calling DeepSeek.
+- The latest successful report email timestamp is stored in
+  `data/history.json` as `last_email_sent_time`.
 - `data/history.json` is the long-term memory.
 - GitHub Secrets store all sensitive credentials.
 - The local computer is only used for development, not for scheduled operation.

@@ -31,6 +31,7 @@ def load_history(history_path: str | Path = DEFAULT_HISTORY_PATH) -> dict[str, A
         raise ValueError(f"History file must contain a JSON object: {path}")
 
     history.setdefault("schema_version", SCHEMA_VERSION)
+    history.setdefault("last_email_sent_time", None)
     history.setdefault("records", [])
 
     if not isinstance(history["records"], list):
@@ -67,6 +68,31 @@ def add_paper(
     return True
 
 
+def get_last_email_sent_time(history: dict[str, Any]) -> str | None:
+    """Return the latest successful email timestamp recorded in history."""
+    explicit_value = history.get("last_email_sent_time")
+    if isinstance(explicit_value, str) and explicit_value:
+        return explicit_value
+
+    pushed_times = [
+        record.get("pushed_time")
+        for record in history.get("records", [])
+        if isinstance(record, dict) and isinstance(record.get("pushed_time"), str)
+    ]
+    return max(pushed_times) if pushed_times else None
+
+
+def mark_email_sent(
+    history_path: str | Path = DEFAULT_HISTORY_PATH,
+    sent_time: str | None = None,
+) -> None:
+    """Persist the latest successful report email timestamp."""
+    path = Path(history_path)
+    history = load_history(path)
+    history["last_email_sent_time"] = sent_time or _utc_now()
+    _write_history(history, path)
+
+
 def _paper_to_record(paper: Paper | dict[str, Any], pushed_time: str | None) -> dict[str, Any]:
     if isinstance(paper, Paper):
         record = paper.to_dict()
@@ -98,9 +124,8 @@ def _paper_arxiv_id(paper: Paper | dict[str, Any]) -> str:
 
 
 def _empty_history() -> dict[str, Any]:
-    return {"schema_version": SCHEMA_VERSION, "records": []}
+    return {"schema_version": SCHEMA_VERSION, "last_email_sent_time": None, "records": []}
 
 
 def _utc_now() -> str:
     return datetime.now(timezone.utc).isoformat()
-
