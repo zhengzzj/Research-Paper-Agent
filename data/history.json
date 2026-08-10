@@ -161,7 +161,52 @@
       "pushed_time": "2026-08-04T03:24:16.915721+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2504.16572",
+      "title": "Bridging Data Gaps and Building Knowledge Networks in Indian Football Analytics",
+      "authors": [
+        "Sneha Nanavati",
+        "Nimmi Rangaswamy"
+      ],
+      "abstract": "The global rise of football analytics has rapidly transformed how clubs make strategic decisions. However, in India, the adoption of analytics remains constrained by institutional resistance, infrastructural limitations, and cultural barriers -- challenges that grassroots innovation and low-cost data solutions have the potential to overcome. Despite the growing popularity of the Indian Super League, resource scarcity and fragmented governance continue to hinder the widespread adoption and impact of analytics. This mixed-methods study explores how informal, decentralised analytics communities -- comprising amateur analysts and Twitter-based \"data sleuths\" -- navigate these constraints through peer mentorship and grassroots innovation. Drawing on extensive digital ethnography, participant observation, and interviews, the study illustrates how these informal networks mitigate data scarcity, limited digital infrastructure, and institutional indifference while fostering skill development and professional growth. Building on these insights, the paper proposes HCI interventions such as decentralised knowledge platforms to facilitate structured, cross-border peer mentorship and low-cost data solutions -- including AI-assisted player tracking and mobile analytics dashboards -- rooted in principles of frugal innovation. These interventions aim to bridge the data divide, support inclusive technical engagement in sport, and enhance analytics-driven decision-making in resource-constrained environments. This paper contributes to HCIxB's focus on cross-border collaboration by highlighting how community-driven technological adaptation in the Global South can foster meaningful participation, skill-building, and long-term sustainability through informal learning networks and scalable, context-sensitive tools.",
+      "published": "2025-04-23T09:48:23+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2504.16572v1",
+      "first_seen_time": "2026-08-10T02:26:22.097877+00:00",
+      "pushed_time": "2026-08-10T02:23:22.860049+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2504.00767",
+      "title": "Automated Explanation of Machine Learning Models of Footballing Actions in Words",
+      "authors": [
+        "Pegah Rahimian",
+        "Jernej Flisar",
+        "David Sumpter"
+      ],
+      "abstract": "While football analytics has changed the way teams and analysts assess performance, there remains a communication gap between machine learning practice and how coaching staff talk about football. Coaches and practitioners require actionable insights, which are not always provided by models. To bridge this gap, we show how to build wordalizations (a novel approach that leverages large language models) for shots in football. Specifically, we first build an expected goals model using logistic regression. We then use the co-efficients of this regression model to write sentences describing how factors (such as distance, angle and defensive pressure) contribute to the model's prediction. Finally, we use large language models to give an entertaining description of the shot. We describe our approach in a model card and provide an interactive open-source application describing shots in recent tournaments. We discuss how shot wordalisations might aid communication in coaching and football commentary, and give a further example of how the same approach can be applied to other actions in football.",
+      "published": "2025-04-01T13:18:22+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2504.00767v1",
+      "first_seen_time": "2026-08-10T02:26:22.098598+00:00",
+      "pushed_time": "2026-08-10T02:23:22.860049+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2410.00943",
+      "title": "RisingBALLER: A player is a token, a match is a sentence, A path towards a foundational model for football players data analytics",
+      "authors": [
+        "Akedjou Achraff Adjileye"
+      ],
+      "abstract": "In this paper, I introduce RisingBALLER, the first publicly available approach that leverages a transformer model trained on football match data to learn match-specific player representations. Drawing inspiration from advances in language modeling, RisingBALLER treats each football match as a unique sequence in which players serve as tokens, with their embeddings shaped by the specific context of the match. Through the use of masked player prediction (MPP) as a pre-training task, RisingBALLER learns foundational features for football player representations, similar to how language models learn semantic features for text representations. As a downstream task, I introduce next match statistics prediction (NMSP) to showcase the effectiveness of the learned player embeddings. The NMSP model surpasses a strong baseline commonly used for performance forecasting within the community. Furthermore, I conduct an in-depth analysis to demonstrate how the learned embeddings by RisingBALLER can be used in various football analytics tasks, such as producing meaningful positional features that capture the essence and variety of player roles beyond rigid x,y coordinates, team cohesion estimation, and similar player retrieval for more effective data-driven scouting. More than a simple machine learning model, RisingBALLER is a comprehensive framework designed to transform football data analytics by learning high-level foundational features for players, taking into account the context of each match. It offers a deeper understanding of football players beyond individual statistics.",
+      "published": "2024-10-01T14:39:22+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2410.00943v1",
+      "first_seen_time": "2026-08-10T02:26:22.099389+00:00",
+      "pushed_time": "2026-08-10T02:23:22.860049+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-08-04T03:24:16.915721+00:00"
+  "last_email_sent_time": "2026-08-10T02:23:22.860049+00:00"
 }
