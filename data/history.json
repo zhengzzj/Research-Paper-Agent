@@ -206,7 +206,54 @@
       "pushed_time": "2026-08-10T02:23:22.860049+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2402.00163",
+      "title": "Improving Object Detection Quality in Football Through Super-Resolution Techniques",
+      "authors": [
+        "Karolina Seweryn",
+        "Gabriel Chęć",
+        "Szymon Łukasik",
+        "Anna Wróblewska"
+      ],
+      "abstract": "This study explores the potential of super-resolution techniques in enhancing object detection accuracy in football. Given the sport's fast-paced nature and the critical importance of precise object (e.g. ball, player) tracking for both analysis and broadcasting, super-resolution could offer significant improvements. We investigate how advanced image processing through super-resolution impacts the accuracy and reliability of object detection algorithms in processing football match footage. Our methodology involved applying state-of-the-art super-resolution techniques to a diverse set of football match videos from SoccerNet, followed by object detection using Faster R-CNN. The performance of these algorithms, both with and without super-resolution enhancement, was rigorously evaluated in terms of detection accuracy. The results indicate a marked improvement in object detection accuracy when super-resolution preprocessing is applied. The improvement of object detection through the integration of super-resolution techniques yields significant benefits, especially for low-resolution scenarios, with a notable 12\\% increase in mean Average Precision (mAP) at an IoU (Intersection over Union) range of 0.50:0.95 for 320x240 size images when increasing the resolution fourfold using RLFN. As the dimensions increase, the magnitude of improvement becomes more subdued; however, a discernible improvement in the quality of detection is consistently evident. Additionally, we discuss the implications of these findings for real-time sports analytics, player tracking, and the overall viewing experience. The study contributes to the growing field of sports technology by demonstrating the practical benefits and limitations of integrating super-resolution techniques in football analytics and broadcasting.",
+      "published": "2024-01-31T20:37:35+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2402.00163v1",
+      "first_seen_time": "2026-08-14T02:33:41.598498+00:00",
+      "pushed_time": "2026-08-14T02:31:20.661459+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2311.06892",
+      "title": "Setting a Baseline for long-shot real-time Player and Ball detection in Soccer Videos",
+      "authors": [
+        "Konstantinos Moutselos",
+        "Ilias Maglogiannis"
+      ],
+      "abstract": "Players and ball detection are among the first required steps on a football analytics platform. Until recently, the existing open datasets on which the evaluations of most models were based, were not sufficient. In this work, we point out their weaknesses, and with the advent of the SoccerNet v3, we propose and deliver to the community an edited part of its dataset, in YOLO normalized annotation format for training and evaluation. The code of the methods and metrics are provided so that they can be used as a benchmark in future comparisons. The recent YOLO8n model proves better than FootAndBall in long-shot real-time detection of the ball and players on football fields.",
+      "published": "2023-11-12T16:39:02+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2311.06892v1",
+      "first_seen_time": "2026-08-14T02:33:41.599237+00:00",
+      "pushed_time": "2026-08-14T02:31:20.661459+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2303.13323",
+      "title": "Deep Generative Multi-Agent Imitation Model as a Computational Benchmark for Evaluating Human Performance in Complex Interactive Tasks: A Case Study in Football",
+      "authors": [
+        "Chaoyi Gu",
+        "Varuna De Silva"
+      ],
+      "abstract": "Evaluating the performance of human is a common need across many applications, such as in engineering and sports. When evaluating human performance in completing complex and interactive tasks, the most common way is to use a metric having been proved efficient for that context, or to use subjective measurement techniques. However, this can be an error prone and unreliable process since static metrics cannot capture all the complex contexts associated with such tasks and biases exist in subjective measurement. The objective of our research is to create data-driven AI agents as computational benchmarks to evaluate human performance in solving difficult tasks involving multiple humans and contextual factors. We demonstrate this within the context of football performance analysis. We train a generative model based on Conditional Variational Recurrent Neural Network (VRNN) Model on a large player and ball tracking dataset. The trained model is used to imitate the interactions between two teams and predict the performance from each team. Then the trained Conditional VRNN Model is used as a benchmark to evaluate team performance. The experimental results on Premier League football dataset demonstrates the usefulness of our method to existing state-of-the-art static metric used in football analytics.",
+      "published": "2023-03-23T15:01:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2303.13323v1",
+      "first_seen_time": "2026-08-14T02:33:41.599985+00:00",
+      "pushed_time": "2026-08-14T02:31:20.661459+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-08-10T02:23:22.860049+00:00"
+  "last_email_sent_time": "2026-08-14T02:31:20.661459+00:00"
 }
