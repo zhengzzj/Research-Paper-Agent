@@ -253,7 +253,88 @@
       "pushed_time": "2026-08-14T02:31:20.661459+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2206.07212",
+      "title": "Explainable expected goal models for performance analysis in football analytics",
+      "authors": [
+        "Mustafa Cavus",
+        "Przemysław Biecek"
+      ],
+      "abstract": "The expected goal provides a more representative measure of the team and player performance which also suit the low-scoring nature of football instead of score in modern football. The score of a match involves randomness and often may not represent the performance of the teams and players, therefore it has been popular to use the alternative statistics in recent years such as shots on target, ball possessions, and drills. To measure the probability of a shot being a goal by the expected goal, several features are used to train an expected goal model which is based on the event and tracking football data. The selection of these features, the size and date of the data, and the model which are used as the parameters that may affect the performance of the model. Using black-box machine learning models for increasing the predictive performance of the model decreases its interpretability that causes the loss of information that can be gathered from the model. This paper proposes an accurate expected goal model trained consisting of 315,430 shots from seven seasons between 2014-15 and 2020-21 of the top-five European football leagues. Moreover, this model is explained by using explainable artificial intelligence tool to obtain an explainable expected goal model for evaluating a team or player performance. To the best of our knowledge, this is the first paper that demonstrates a practical application of an explainable artificial intelligence tool aggregated profiles to explain a group of observations on an accurate expected goal model for monitoring the team and player performance. Moreover, these methods can be generalized to other sports branches.",
+      "published": "2022-06-14T23:56:03+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2206.07212v2",
+      "first_seen_time": "2026-08-24T01:53:27.443242+00:00",
+      "pushed_time": "2026-08-24T01:48:42.219594+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2106.01786",
+      "title": "What Happened Next? Using Deep Learning to Value Defensive Actions in Football Event-Data",
+      "authors": [
+        "Charbel Merhej",
+        "Ryan Beal",
+        "Sarvapali Ramchurn",
+        "Tim Matthews"
+      ],
+      "abstract": "Objectively quantifying the value of player actions in football (soccer) is a challenging problem. To date, studies in football analytics have mainly focused on the attacking side of the game, while there has been less work on event-driven metrics for valuing defensive actions (e.g., tackles and interceptions). Therefore in this paper, we use deep learning techniques to define a novel metric that values such defensive actions by studying the threat of passages of play that preceded them. By doing so, we are able to value defensive actions based on what they prevented from happening in the game. Our Defensive Action Expected Threat (DAxT) model has been validated using real-world event-data from the 2017/2018 and 2018/2019 English Premier League seasons, and we combine our model outputs with additional features to derive an overall rating of defensive ability for players. Overall, we find that our model is able to predict the impact of defensive actions allowing us to better value defenders using event-data.",
+      "published": "2021-06-03T12:18:26+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2106.01786v1",
+      "first_seen_time": "2026-08-24T01:53:27.444106+00:00",
+      "pushed_time": "2026-08-24T01:48:42.219594+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2011.09192",
+      "title": "Game Plan: What AI can do for Football, and What Football can do for AI",
+      "authors": [
+        "Karl Tuyls",
+        "Shayegan Omidshafiei",
+        "Paul Muller",
+        "Zhe Wang",
+        "Jerome Connor",
+        "Daniel Hennes",
+        "Ian Graham",
+        "William Spearman",
+        "Tim Waskett",
+        "Dafydd Steele",
+        "Pauline Luc",
+        "Adria Recasens",
+        "Alexandre Galashov",
+        "Gregory Thornton",
+        "Romuald Elie",
+        "Pablo Sprechmann",
+        "Pol Moreno",
+        "Kris Cao",
+        "Marta Garnelo",
+        "Praneet Dutta",
+        "Michal Valko",
+        "Nicolas Heess",
+        "Alex Bridgland",
+        "Julien Perolat",
+        "Bart De Vylder",
+        "Ali Eslami",
+        "Mark Rowland",
+        "Andrew Jaegle",
+        "Remi Munos",
+        "Trevor Back",
+        "Razia Ahamed",
+        "Simon Bouton",
+        "Nathalie Beauguerlange",
+        "Jackson Broshear",
+        "Thore Graepel",
+        "Demis Hassabis"
+      ],
+      "abstract": "The rapid progress in artificial intelligence (AI) and machine learning has opened unprecedented analytics possibilities in various team and individual sports, including baseball, basketball, and tennis. More recently, AI techniques have been applied to football, due to a huge increase in data collection by professional teams, increased computational power, and advances in machine learning, with the goal of better addressing new scientific challenges involved in the analysis of both individual players' and coordinated teams' behaviors. The research challenges associated with predictive and prescriptive football analytics require new developments and progress at the intersection of statistical learning, game theory, and computer vision. In this paper, we provide an overarching perspective highlighting how the combination of these fields, in particular, forms a unique microcosm for AI research, while offering mutual benefits for professional teams, spectators, and broadcasters in the years to come. We illustrate that this duality makes football analytics a game changer of tremendous value, in terms of not only changing the game of football itself, but also in terms of what this domain can mean for the field of AI. We review the state-of-the-art and exemplify the types of analysis enabled by combining the aforementioned fields, including illustrative examples of counterfactual analysis using predictive models, and the combination of game-theoretic analysis of penalty kicks with statistical learning of player attributes. We conclude by highlighting envisioned downstream impacts, including possibilities for extensions to other sports (real and virtual).",
+      "published": "2020-11-18T10:26:02+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2011.09192v1",
+      "first_seen_time": "2026-08-24T01:53:27.444914+00:00",
+      "pushed_time": "2026-08-24T01:48:42.219594+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-08-14T02:31:20.661459+00:00"
+  "last_email_sent_time": "2026-08-24T01:48:42.219594+00:00"
 }
