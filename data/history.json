@@ -334,7 +334,69 @@
       "pushed_time": "2026-08-24T01:48:42.219594+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "1808.04550",
+      "title": "SciSports: Learning football kinematics through two-dimensional tracking data",
+      "authors": [
+        "Anatoliy Babic",
+        "Harshit Bansal",
+        "Gianluca Finocchio",
+        "Julian Golak",
+        "Mark Peletier",
+        "Jim Portegies",
+        "Clara Stegehuis",
+        "Anuj Tyagi",
+        "Roland Vincze",
+        "William Weimin Yoo"
+      ],
+      "abstract": "SciSports is a Dutch startup company specializing in football analytics. This paper describes a joint research effort with SciSports, during the Study Group Mathematics with Industry 2018 at Eindhoven, the Netherlands. The main challenge that we addressed was to automatically process empirical football players' trajectories, in order to extract useful information from them. The data provided to us was two-dimensional positional data during entire matches. We developed methods based on Newtonian mechanics and the Kalman filter, Generative Adversarial Nets and Variational Autoencoders. In addition, we trained a discriminator network to recognize and discern different movement patterns of players. The Kalman-filter approach yields an interpretable model, in which a small number of player-dependent parameters can be fit; in theory this could be used to distinguish among players. The Generative-Adversarial-Nets approach appears promising in theory, and some initial tests showed an improvement with respect to the baseline, but the limits in time and computational power meant that we could not fully explore it. We also trained a Discriminator network to distinguish between two players based on their trajectories; after training, the network managed to distinguish between some pairs of players, but not between others. After training, the Variational Autoencoders generated trajectories that are difficult to distinguish, visually, from the data. These experiments provide an indication that deep generative models can learn the underlying structure and statistics of football players' trajectories. This can serve as a starting point for determining player qualities based on such trajectory data.",
+      "published": "2018-08-14T06:40:01+00:00",
+      "pdf_url": "https://arxiv.org/pdf/1808.04550v1",
+      "first_seen_time": "2026-08-28T11:08:20.145409+00:00",
+      "pushed_time": "2026-08-28T11:05:31.358783+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2607.27125",
+      "title": "TactiPlay: Multi-Granularity Tactical Parsing and Video-Anchored Match Review for Amateur Badminton Players",
+      "authors": [
+        "Qiaoyi Chen",
+        "Yuheng Liu",
+        "Xinzhuang Xiong",
+        "Junze Li",
+        "Hongyi Tang",
+        "Xinyi Zhang",
+        "Qingyu Guo",
+        "Xiaojuan Ma"
+      ],
+      "abstract": "Amateur badminton players increasingly record matches, yet existing tools provide only aggregate statistics or generic summaries, leaving most unable to extract tactical insights without expert guidance. A formative study (N=8) reveals the need for multi-granularity, video-anchored tactical analysis centered on rallies. We derive a taxonomy of performance issues from national-level athletes' annotations and present TactiPlay, an interactive system that instantiates an expert-taxonomy-guided, rally-level, video-anchored review workflow. The system's analytical pipeline organizes match events into taxonomy-grounded feedback, while its interface links structured reports to rally summaries, video evidence, and court visualizations. A within-subjects study (N=16) shows that TactiPlay elicits more frequent, concrete, actionable, and appropriate reflections than a report-and-statistics baseline. These findings show how organizing reviewed match evidence into a taxonomy-guided, video-linked workflow can support amateur players' tactical reflection.",
+      "published": "2026-07-29T16:52:10+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2607.27125v1",
+      "first_seen_time": "2026-08-28T11:08:20.146399+00:00",
+      "pushed_time": "2026-08-28T11:05:31.358783+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2606.30090",
+      "title": "SAT-RTS: A systematic framework for tactical knowledge extraction and visualization-based analysis in real-time strategy games",
+      "authors": [
+        "Chunhui Bai",
+        "Changhe Li",
+        "Yuqiang Li",
+        "Lei Liu",
+        "Shoufei Han"
+      ],
+      "abstract": "Efficient tactical knowledge extraction and analysis in real-time strategy (RTS) games micromanagement are constrained by the high-dimensional coupled state-action sequential data and the black-box decision-making process. Current research rarely provides a hierarchical visualization-based attribution analysis from the perspective of data decoupling and abstraction. To facilitate interpretable tactical knowledge extraction and visualization-based analysis in RTS games, a systematic framework named state-action-tactic analysis pipeline (SAT-RTS) is proposed. To decipher the deep-seated drivers of critical decisions in RTS learning systems, this work integrates interpretable visualization with the automated extraction of latent tactical patterns from high-dimensional sequence data. By adapting a cluster-centric BK-tree algorithm and incorporating specialized distance metrics designed to quantify multi-aspect similarities, the proposed framework facilitates robust state-stream abstraction. Furthermore, a rule-based multi-label extraction method is developed to transform unstructured state-action sequences into discrete and interpretable tactical labels, effectively bridging the gap between raw behavioral data and high-level tactical insights. By holistically integrating these computational methods into a hierarchical visualization-based pipeline, the proposed framework effectively addresses the challenges of processing massive real-time data streams while providing fitness landscape visualizations and analytical insights to decipher deep-seated tactical drivers. Comprehensive experiments demonstrate that the proposed SAT-RTS significantly enhances the interpretability and efficiency of tactical analysis in complex RTS environments.",
+      "published": "2026-06-29T10:28:43+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2606.30090v1",
+      "first_seen_time": "2026-08-28T11:08:20.147249+00:00",
+      "pushed_time": "2026-08-28T11:05:31.358783+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-08-24T01:48:42.219594+00:00"
+  "last_email_sent_time": "2026-08-28T11:05:31.358783+00:00"
 }
