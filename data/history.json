@@ -396,7 +396,65 @@
       "pushed_time": "2026-08-28T11:05:31.358783+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2606.09289",
+      "title": "Intention Driven Identification of In-Possession Match Phases in Association Football through Temporal Graph Learning",
+      "authors": [
+        "Yuesen Li",
+        "Daniel Link"
+      ],
+      "abstract": "Understanding tactical organisation in association football requires identifying in-possession match phases that are shaped by evolving tactical intentions rather than by spatial patterns alone. This study proposes an intention-driven framework for identifying phases from tracking data. Seven German Bundesliga matches recorded at 25 Hz with TRACAB were analysed. A hierarchical model was defined with three tactical intentions (Invade Opponent Space, Keep Possession, Scoring) and six phases (Build Up, Progression, Counter Attack, Maintenance, Sustained Threat, Finishing). A Temporal Graph Attention Network (T-GAN) combined frame-level player-interaction graphs, contextual features, and Transformer-based temporal modelling. Performance was evaluated using frame-level F1 and temporal Intersection over Union (tIoU). T-GAN achieved macro-average frame-level F1 scores of 0.87 at the intention level, 0.76 for invasion-related phases, and 0.79 for scoring phases. After filtering, mean class-wise tIoU increased from 0.44 to 0.67 for intentions and from 0.40 to 0.57 for phases, showing that sequence-level evaluation captured fragmentation and boundary errors missed by frame-level metrics. Model comparisons indicated that Transformer-based sequence modelling drove coherent segmentation, while graph-based relational modelling was most beneficial for Counter Attack. Misalignment analysis revealed common sequence level misalignments, mainly Build Up/Progression ambiguity, Build Up/Maintenance confusion, Counter Attack/Progression inconsistency, and shortened pre-shot Finishing segments. Overall, the framework translates tracking data into tactically interpretable phase representations for automated annotation, tactical analysis, and playing-style profiling.",
+      "published": "2026-06-08T09:57:04+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2606.09289v3",
+      "first_seen_time": "2026-09-01T04:49:56.931613+00:00",
+      "pushed_time": "2026-09-01T04:47:20.091321+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2604.04419",
+      "title": "BoxComm: Benchmarking Category-Aware Commentary Generation and Narration Rhythm in Boxing",
+      "authors": [
+        "Kaiwen Wang",
+        "Kaili Zheng",
+        "Rongrong Deng",
+        "Yiming Shi",
+        "Chenyi Guo",
+        "Ji Wu"
+      ],
+      "abstract": "Recent multimodal large language models (MLLMs) have shown strong capabilities in general video understanding, driving growing interest in automatic sports commentary generation. However, existing benchmarks for this task focus exclusively on team sports such as soccer and basketball, leaving combat sports entirely unexplored. Notably, combat sports present distinct challenges: critical actions unfold within milliseconds with visually subtle yet semantically decisive differences, and professional commentary contains a substantially higher proportion of tactical analysis compared to team sports. In this paper, we present BoxComm, a large-scale dataset comprising 445 World Boxing Championship match videos with over 52K commentary sentences from professional broadcasts. We propose a structured commentary taxonomy that categorizes each sentence into play-by-play, tactical, or contextual, providing the first category-level annotation for sports commentary benchmarks. Building on this taxonomy, we introduce two novel and complementary evaluations tailored to sports commentary generation: (1) category-conditioned generation, which evaluates whether models can produce accurate commentary of a specified type given video context; and (2) commentary rhythm assessment, which measures whether freely generated commentary exhibits appropriate temporal pacing and type distribution over continuous video segments, capturing a dimension of commentary competence that prior benchmarks have not addressed. Experiments on multiple state-of-the-art MLLMs reveal that current models struggle on both evaluations. We further propose EIC-Gen, an improved baseline incorporating detected punch events to supply structured action cues, yielding consistent gains and highlighting the importance of perceiving fleeting and subtle events for combat sports commentary.",
+      "published": "2026-04-06T04:56:49+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2604.04419v1",
+      "first_seen_time": "2026-09-01T04:49:56.932619+00:00",
+      "pushed_time": "2026-09-01T04:47:20.091321+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2601.11492",
+      "title": "BoxMind: Closed-loop AI strategy optimization for elite boxing validated in the 2024 Olympics",
+      "authors": [
+        "Kaiwen Wang",
+        "Kaili Zheng",
+        "Rongrong Deng",
+        "Qingmin Fan",
+        "Milin Zhang",
+        "Zongrui Li",
+        "Xuesi Zhou",
+        "Bo Han",
+        "Liren Chen",
+        "Chenyi Guo",
+        "Ji Wu"
+      ],
+      "abstract": "Competitive sports require sophisticated tactical analysis, yet combat disciplines like boxing remain underdeveloped in AI-driven analytics due to the complexity of action dynamics and the lack of structured tactical representations. To address this, we present BoxMind, a closed-loop AI expert system validated in elite boxing competition. By defining atomic punch events with precise temporal boundaries and spatial and technical attributes, we parse match footage into 18 hierarchical technical-tactical indicators. We then propose a graph-based predictive model that fuses these explicit technical-tactical profiles with learnable, time-variant latent embeddings to capture the dynamics of boxer matchups. Modeling match outcome as a differentiable function of technical-tactical indicators, we turn winning probability gradients into executable tactical adjustments. Experiments show that the outcome prediction model achieves state-of-the-art performance, with 69.8% accuracy on BoxerGraph test set and 87.5% on Olympic matches. Using this predictive model as a foundation, the system generates strategic recommendations that demonstrate proficiency comparable to human experts. BoxMind is validated through a closed-loop deployment during the 2024 Paris Olympics, directly contributing to the Chinese National Team's historic achievement of three gold and two silver medals. BoxMind establishes a replicable paradigm for transforming unstructured video data into strategic intelligence, bridging the gap between computer vision and decision support in competitive sports. Code and data is available at https://github.com/gouba2333/BoxingWeb.",
+      "published": "2026-01-16T18:14:46+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2601.11492v2",
+      "first_seen_time": "2026-09-01T04:49:56.933567+00:00",
+      "pushed_time": "2026-09-01T04:47:20.091321+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-08-28T11:05:31.358783+00:00"
+  "last_email_sent_time": "2026-09-01T04:47:20.091321+00:00"
 }
