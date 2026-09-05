@@ -454,7 +454,60 @@
       "pushed_time": "2026-09-01T04:47:20.091321+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2512.22186",
+      "title": "Learning Tennis Strategy Through Curriculum-Based Dueling Double Deep Q-Networks",
+      "authors": [
+        "Vishnu Mohan"
+      ],
+      "abstract": "Tennis strategy optimization is a challenging sequential decision-making problem involving hierarchical scoring, stochastic outcomes, long-horizon credit assignment, physical fatigue, and adaptation to opponent skill. I present a reinforcement learning framework that integrates a custom tennis simulation environment with a Dueling Double Deep Q-Network(DDQN) trained using curriculum learning. The environment models complete tennis scoring at the level of points, games, and sets, rally-level tactical decisions across ten discrete action categories, symmetric fatigue dynamics, and a continuous opponent skill parameter. The dueling architecture decomposes action-value estimation into state-value and advantage components, while double Q-learning reduces overestimation bias and improves training stability in this long-horizon stochastic domain. Curriculum learning progressively increases opponent difficulty from 0.40 to 0.50, enabling robust skill acquisition without the training collapse observed under fixed opponents. Across extensive evaluations, the trained agent achieves win rates between 98 and 100 percent against balanced opponents and maintains strong performance against more challenging opponents. Serve efficiency ranges from 63.0 to 67.5 percent, and return efficiency ranges from 52.8 to 57.1 percent. Ablation studies demonstrate that both the dueling architecture and curriculum learning are necessary for stable convergence, while a standard DQN baseline fails to learn effective policies. Despite strong performance, tactical analysis reveals a pronounced defensive bias, with the learned policy prioritizing error avoidance and prolonged rallies over aggressive point construction. These results highlight a limitation of win-rate driven optimization in simplified sports simulations and emphasize the importance of reward design for realistic sports reinforcement learning.",
+      "published": "2025-12-20T04:22:07+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2512.22186v1",
+      "first_seen_time": "2026-09-05T04:10:01.862382+00:00",
+      "pushed_time": "2026-09-05T04:07:04.425803+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2511.13326",
+      "title": "TacEleven: generative tactic discovery for football open play",
+      "authors": [
+        "Siyao Zhao",
+        "Hao Ma",
+        "Zhiqiang Pu",
+        "Jingjing Huang",
+        "Yi Pan",
+        "Shijie Wang",
+        "Zhi Ming"
+      ],
+      "abstract": "Creating offensive advantages during open play is fundamental to football success. However, due to the highly dynamic and long-sequence nature of open play, the potential tactic space grows exponentially as the sequence progresses, making automated tactic discovery extremely challenging. To address this, we propose TacEleven, a generative framework for football open-play tactic discovery developed in close collaboration with domain experts from AJ Auxerre, designed to assist coaches and analysts in tactical decision-making. TacEleven consists of two core components: a language-controlled tactical generator that produces diverse tactical proposals, and a multimodal large language model-based tactical critic that selects the optimal proposal aligned with a high-level stylistic tactical instruction. The two components enables rapid exploration of tactical proposals and discovery of alternative open-play offensive tactics. We evaluate TacEleven across three tasks with progressive tactical complexity: counterfactual exploration, single-step discovery, and multi-step discovery, through both quantitative metrics and a questionnaire-based qualitative assessment. The results show that the TacEleven-discovered tactics exhibit strong realism and tactical creativity, with 52.50% of the multi-step tactical alternatives rated adoptable in real-world elite football scenarios, highlighting the framework's ability to rapidly generate numerous high-quality tactics for complex long-sequence open-play situations. TacEleven demonstrates the potential of creatively leveraging domain data and generative models to advance tactical analysis in sports.",
+      "published": "2025-11-17T13:01:53+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2511.13326v2",
+      "first_seen_time": "2026-09-05T04:10:01.863675+00:00",
+      "pushed_time": "2026-09-05T04:07:04.425803+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2510.18405",
+      "title": "Automated Wicket-Taking Delivery Segmentation and Trajectory-Based Dismissal-Zone Analysis in Cricket Videos Using OCR-Guided YOLOv8",
+      "authors": [
+        "Joy Karmoker",
+        "Masum Billah",
+        "Mst Jannatun Ferdous",
+        "Akif Islam",
+        "Mohd Ruhul Ameen",
+        "Md. Omar Faruqe"
+      ],
+      "abstract": "Cricket generates a rich stream of visual and contextual information, yet much of its tactical analysis still depends on slow and subjective manual review. Motivated by the need for a more efficient and data-driven alternative, this paper presents an automated approach for cricket video analysis that identifies wicket-taking deliveries, detects the pitch and ball, and models ball trajectories for post-match assessment. The proposed system combines optical character recognition (OCR) with image preprocessing techniques, including grayscale conversion, power transformation, and morphological operations, to robustly extract scorecard information and detect wicket events from broadcast videos. For visual understanding, YOLOv8 is employed for both pitch and ball detection. The pitch detection model achieved 99.5% mAP50 with a precision of 0.999, while the transfer learning-based ball detection model attained 99.18% mAP50 with 0.968 precision and 0.978 recall. Based on these detections, the system further models ball trajectories to reveal regions associated with wicket-taking deliveries, offering analytical cues for trajectory-based dismissal-zone interpretation and potential batting vulnerability assessment. Experimental results on multiple cricket match videos demonstrate the effectiveness of the proposed approach and highlight its potential for supporting coaching, tactical evaluation, and data-driven decision-making in cricket.",
+      "published": "2025-10-21T08:27:23+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2510.18405v2",
+      "first_seen_time": "2026-09-05T04:10:01.865288+00:00",
+      "pushed_time": "2026-09-05T04:07:04.425803+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-09-01T04:47:20.091321+00:00"
+  "last_email_sent_time": "2026-09-05T04:07:04.425803+00:00"
 }
