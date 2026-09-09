@@ -507,7 +507,56 @@
       "pushed_time": "2026-09-05T04:07:04.425803+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2609.04803",
+      "title": "Hierarchical Possession-Aware Graph Pointer Network for Pass Receiver Selection",
+      "authors": [
+        "Jingyi Wang",
+        "Da Li",
+        "Kaixin Wang",
+        "Zhangqin Huang"
+      ],
+      "abstract": "Pass receiver selection is a fundamental task in football analytics, aiming to predict the intended receiver under a given game state. This task is challenging with event-centered freeze-frame observations, a broadcast-like setting that provides only partial and variable player visibility without complete trajectories or stable player identities. The model must therefore reason over anonymous visible candidates, opponent pressure, and recent context under partial observation. To address this setting, we propose a Hierarchical Possession-aware Graph Pointer Network (HPGPN), which formulates pass receiver selection as variable-size candidate prediction over visible teammates. HPGPN jointly models current player interactions, local event context, and possession-level temporal dynamics. It represents the current pass situation with a graph, incorporates fixed event context, and uses dynamic possession history to capture how the attacking sequence evolves. Candidate representations are refined hierarchically by integrating spatial, contextual, and historical evidence, and a glimpse pointer head scores the receiver candidates. Experiments on public football event and freeze-frame data show that HPGPN improves pass receiver selection performance. Ablation studies demonstrate the effectiveness of graph-based interaction modeling, fixed event context, and dual-branch dynamic possession-history modeling.",
+      "published": "2026-09-04T07:00:51+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2609.04803v1",
+      "first_seen_time": "2026-09-09T04:23:29.211917+00:00",
+      "pushed_time": "2026-09-09T04:21:06.477347+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2510.00480",
+      "title": "Expandable Decision-Making States for Multi-Agent Deep Reinforcement Learning in Soccer Tactical Analysis",
+      "authors": [
+        "Kenjiro Ide",
+        "Taiga Someya",
+        "Kohei Kawaguchi",
+        "Keisuke Fujii"
+      ],
+      "abstract": "Invasion team sports such as soccer produce a high-dimensional, strongly coupled state space as many players continuously interact on a shared field, challenging quantitative tactical analysis. Traditional rule-based analyses are intuitive, while modern predictive machine learning models often perform pattern-matching without explicit agent representations. The problem we address is how to build player-level agent models from data, whose learned values and policies are both tactically interpretable and robust across heterogeneous data sources. Here, we propose Expandable Decision-Making States (EDMS), a semantically enriched state representation that augments raw positions and velocities with relational variables (e.g., scoring of space, pass, and score), combined with an action-masking scheme that gives on-ball and off-ball agents distinct decision sets. Compared to prior work, EDMS maps learned value functions and action policies to human-interpretable tactical concepts (e.g., marking pressure, passing lanes, ball accessibility) instead of raw coordinate features, and aligns agent choices with the rules of play. In the experiments, EDMS with action masking consistently reduced both action-prediction loss and temporal-difference (TD) error compared to the baseline. Qualitative case studies and Q-value visualizations further indicate that EDMS highlights high-risk, high-reward tactical patterns (e.g., fast counterattacks and defensive breakthroughs). We also integrated our approach into an open-source library and demonstrated compatibility with multiple commercial and open datasets, enabling cross-provider evaluation and reproducible experiments.",
+      "published": "2025-10-01T04:01:51+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2510.00480v2",
+      "first_seen_time": "2026-09-09T04:23:29.213205+00:00",
+      "pushed_time": "2026-09-09T04:21:06.477347+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2509.26088",
+      "title": "Predicting Penalty Kick Direction Using Multi-Modal Deep Learning with Pose-Guided Attention",
+      "authors": [
+        "Pasindu Ranasinghe",
+        "Pamudu Ranasinghe"
+      ],
+      "abstract": "Penalty kicks often decide championships, yet goalkeepers must anticipate the kicker's intent from subtle biomechanical cues within a very short time window. This study introduces a real-time, multi-modal deep learning framework to predict the direction of a penalty kick (left, middle, or right) before ball contact. The model uses a dual-branch architecture: a MobileNetV2-based CNN extracts spatial features from RGB frames, while 2D keypoints are processed by an LSTM network with attention mechanisms. Pose-derived keypoints further guide visual focus toward task-relevant regions. A distance-based thresholding method segments input sequences immediately before ball contact, ensuring consistent input across diverse footage. A custom dataset of 755 penalty kick events was created from real match videos, with frame-level annotations for object detection, shooter keypoints, and final ball placement. The model achieved 89% accuracy on a held-out test set, outperforming visual-only and pose-only baselines by 14-22%. With an inference time of 22 milliseconds, the lightweight and interpretable design makes it suitable for goalkeeper training, tactical analysis, and real-time game analytics.",
+      "published": "2025-09-30T11:02:59+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2509.26088v1",
+      "first_seen_time": "2026-09-09T04:23:29.214391+00:00",
+      "pushed_time": "2026-09-09T04:21:06.477347+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-09-05T04:07:04.425803+00:00"
+  "last_email_sent_time": "2026-09-09T04:21:06.477347+00:00"
 }
