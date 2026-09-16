@@ -556,7 +556,61 @@
       "pushed_time": "2026-09-09T04:21:06.477347+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2508.15299",
+      "title": "BasketLiDAR: The First LiDAR-Camera Multimodal Dataset for Professional Basketball MOT",
+      "authors": [
+        "Ryunosuke Hayashi",
+        "Kohei Torimi",
+        "Rokuto Nagata",
+        "Kazuma Ikeda",
+        "Ozora Sako",
+        "Taichi Nakamura",
+        "Masaki Tani",
+        "Yoshimitsu Aoki",
+        "Kentaro Yoshioka"
+      ],
+      "abstract": "Real-time 3D trajectory player tracking in sports plays a crucial role in tactical analysis, performance evaluation, and enhancing spectator experience. Traditional systems rely on multi-camera setups, but are constrained by the inherently two-dimensional nature of video data and the need for complex 3D reconstruction processing, making real-time analysis challenging. Basketball, in particular, represents one of the most difficult scenarios in the MOT field, as ten players move rapidly and complexly within a confined court space, with frequent occlusions caused by intense physical contact. To address these challenges, this paper constructs BasketLiDAR, the first multimodal dataset in the sports MOT field that combines LiDAR point clouds with synchronized multi-view camera footage in a professional basketball environment, and proposes a novel MOT framework that simultaneously achieves improved tracking accuracy and reduced computational cost. The BasketLiDAR dataset contains a total of 4,445 frames and 3,105 player IDs, with fully synchronized IDs between three LiDAR sensors and three multi-view cameras. We recorded 5-on-5 and 3-on-3 game data from actual professional basketball players, providing complete 3D positional information and ID annotations for each player. Based on this dataset, we developed a novel MOT algorithm that leverages LiDAR's high-precision 3D spatial information. The proposed method consists of a real-time tracking pipeline using LiDAR alone and a multimodal tracking pipeline that fuses LiDAR and camera data. Experimental results demonstrate that our approach achieves real-time operation, which was difficult with conventional camera-only methods, while achieving superior tracking performance even under occlusion conditions. The dataset is available upon request at: https://sites.google.com/keio.jp/keio-csg/projects/basket-lidar",
+      "published": "2025-08-21T06:40:51+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2508.15299v1",
+      "first_seen_time": "2026-09-16T04:33:39.524597+00:00",
+      "pushed_time": "2026-09-16T04:31:29.070075+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2508.01802",
+      "title": "SoccerTrack v2: A Full-Pitch Multi-View Soccer Dataset for Game State Reconstruction",
+      "authors": [
+        "Atom Scott",
+        "Ikuma Uchida",
+        "Kento Kuroda",
+        "Yufi Kim",
+        "Keisuke Fujii"
+      ],
+      "abstract": "SoccerTrack v2 is a new public dataset for advancing multi-object tracking (MOT), game state reconstruction (GSR), and ball action spotting (BAS) in soccer analytics. Unlike prior datasets that use broadcast views or limited scenarios, SoccerTrack v2 provides 10 full-length, panoramic 4K recordings of university-level matches, captured with BePro cameras for complete player visibility. Each video is annotated with GSR labels (2D pitch coordinates, jersey-based player IDs, roles, teams) and BAS labels for 12 action classes (e.g., Pass, Drive, Shot). This technical report outlines the datasets structure, collection pipeline, and annotation process. SoccerTrack v2 is designed to advance research in computer vision and soccer analytics, enabling new benchmarks and practical applications in tactical analysis and automated tools.",
+      "published": "2025-08-03T15:38:59+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2508.01802v1",
+      "first_seen_time": "2026-09-16T04:33:39.525984+00:00",
+      "pushed_time": "2026-09-16T04:31:29.070075+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2506.23843",
+      "title": "EFPI: Elastic Formation and Position Identification in Football (Soccer) using Template Matching and Linear Assignment",
+      "authors": [
+        "Joris Bekkers"
+      ],
+      "abstract": "Understanding team formations and player positioning is crucial for tactical analysis in football (soccer). This paper presents a flexible method for formation recognition and player position assignment in football using predefined static formation templates and cost minimization from spatiotemporal tracking data, called EFPI. Our approach employs linear sum assignment to optimally match players to positions within a set of template formations by minimizing the total distance between actual player locations and template positions, subsequently selecting the formation with the lowest assignment cost. To improve accuracy, we scale actual player positions to match the dimensions of these formation templates in both width and length. While the method functions effectively on individual frames, it extends naturally to larger game segments such as complete periods, possession sequences or specific intervals (e.g. 10 second intervals, 5 minute intervals etc.). Additionally, we incorporate an optional stability parameter that prevents unnecessary formation changes when assignment costs differ only marginally between time segments. EFPI is available as open-source code through the unravelsports Python package.",
+      "published": "2025-06-30T13:33:37+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2506.23843v1",
+      "first_seen_time": "2026-09-16T04:33:39.527254+00:00",
+      "pushed_time": "2026-09-16T04:31:29.070075+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-09-09T04:21:06.477347+00:00"
+  "last_email_sent_time": "2026-09-16T04:31:29.070075+00:00"
 }
