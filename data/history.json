@@ -610,7 +610,60 @@
       "pushed_time": "2026-09-16T04:31:29.070075+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2507.02906",
+      "title": "Enhancing Sports Strategy with Video Analytics and Data Mining: Automated Video-Based Analytics Framework for Tennis Doubles",
+      "authors": [
+        "Jia Wei Chen"
+      ],
+      "abstract": "We present a comprehensive video-based analytics framework for tennis doubles that addresses the lack of automated analysis tools for this strategically complex sport. Our approach introduces a standardised annotation methodology encompassing player positioning, shot types, court formations, and match outcomes, coupled with a specialised annotation tool designed to meet the unique requirements of tennis video labelling. The framework integrates advanced machine learning techniques including GroundingDINO for precise player localisation through natural language grounding and YOLO-Pose for robust pose estimation. This combination significantly reduces manual annotation effort whilst improving data consistency and quality. We evaluate our approach on doubles tennis match data and demonstrate that CNN-based models with transfer learning substantially outperform pose-based methods for predicting shot types, player positioning, and formations. The CNN models effectively capture complex visual and contextual features essential for doubles tennis analysis. Our integrated system bridges advanced analytical capabilities with the strategic complexities of tennis doubles, providing a foundation for automated tactical analysis, performance evaluation, and strategic modelling in professional tennis.",
+      "published": "2025-06-24T06:48:55+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2507.02906v1",
+      "first_seen_time": "2026-09-20T04:39:21.769283+00:00",
+      "pushed_time": "2026-09-20T04:37:44.047688+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2506.16696",
+      "title": "Interpretable Low-Dimensional Modeling of Spatiotemporal Agent States for Decision Making in Football Tactics",
+      "authors": [
+        "Kenjiro Ide",
+        "Taiga Someya",
+        "Kohei Kawaguchi",
+        "Keisuke Fujii"
+      ],
+      "abstract": "Understanding football tactics is crucial for managers and analysts. Previous research has proposed models based on spatial and kinematic equations, but these are computationally expensive. Also, Reinforcement learning approaches use player positions and velocities but lack interpretability and require large datasets. Rule-based models align with expert knowledge but have not fully considered all players' states. This study explores whether low-dimensional, rule-based models using spatiotemporal data can effectively capture football tactics. Our approach defines interpretable state variables for both the ball-holder and potential pass receivers, based on criteria that explore options like passing. Through discussions with a manager, we identified key variables representing the game state. We then used StatsBomb event data and SkillCorner tracking data from the 2023$/$24 LaLiga season to train an XGBoost model to predict pass success. The analysis revealed that the distance between the player and the ball, as well as the player's space score, were key factors in determining successful passes. Our interpretable low-dimensional modeling facilitates tactical analysis through the use of intuitive variables and provides practical value as a tool to support decision-making in football.",
+      "published": "2025-06-20T02:37:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2506.16696v1",
+      "first_seen_time": "2026-09-20T04:39:21.770812+00:00",
+      "pushed_time": "2026-09-20T04:37:44.047688+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2504.12021",
+      "title": "Action Anticipation from SoccerNet Football Video Broadcasts",
+      "authors": [
+        "Mohamad Dalal",
+        "Artur Xarles",
+        "Anthony Cioppa",
+        "Silvio Giancola",
+        "Marc Van Droogenbroeck",
+        "Bernard Ghanem",
+        "Albert Clapés",
+        "Sergio Escalera",
+        "Thomas B. Moeslund"
+      ],
+      "abstract": "Artificial intelligence has revolutionized the way we analyze sports videos, whether to understand the actions of games in long untrimmed videos or to anticipate the player's motion in future frames. Despite these efforts, little attention has been given to anticipating game actions before they occur. In this work, we introduce the task of action anticipation for football broadcast videos, which consists in predicting future actions in unobserved future frames, within a five- or ten-second anticipation window. To benchmark this task, we release a new dataset, namely the SoccerNet Ball Action Anticipation dataset, based on SoccerNet Ball Action Spotting. Additionally, we propose a Football Action ANticipation TRAnsformer (FAANTRA), a baseline method that adapts FUTR, a state-of-the-art action anticipation model, to predict ball-related actions. To evaluate action anticipation, we introduce new metrics, including mAP@$δ$, which evaluates the temporal precision of predicted future actions, as well as mAP@$\\infty$, which evaluates their occurrence within the anticipation window. We also conduct extensive ablation studies to examine the impact of various task settings, input configurations, and model architectures. Experimental results highlight both the feasibility and challenges of action anticipation in football videos, providing valuable insights into the design of predictive models for sports analytics. By forecasting actions before they unfold, our work will enable applications in automated broadcasting, tactical analysis, and player decision-making. Our dataset and code are publicly available at https://github.com/MohamadDalal/FAANTRA.",
+      "published": "2025-04-16T12:24:33+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2504.12021v1",
+      "first_seen_time": "2026-09-20T04:39:21.772244+00:00",
+      "pushed_time": "2026-09-20T04:37:44.047688+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-09-16T04:31:29.070075+00:00"
+  "last_email_sent_time": "2026-09-20T04:37:44.047688+00:00"
 }
