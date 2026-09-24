@@ -663,7 +663,62 @@
       "pushed_time": "2026-09-20T04:37:44.047688+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2502.02785",
+      "title": "OpenSTARLab: Open Approach for Spatio-Temporal Agent Data Analysis in Soccer",
+      "authors": [
+        "Calvin Yeung",
+        "Kenjiro Ide",
+        "Taiga Someya",
+        "Keisuke Fujii"
+      ],
+      "abstract": "Sports analytics has become both more professional and sophisticated, driven by the growing availability of detailed performance data. This progress enables applications such as match outcome prediction, player scouting, and tactical analysis. In soccer, the effective utilization of event and tracking data is fundamental for capturing and analyzing the dynamics of the game. However, there are two primary challenges: the limited availability of event data, primarily restricted to top-tier teams and leagues, and the scarcity and high cost of tracking data, which complicates its integration with event data for comprehensive analysis. Here we propose OpenSTARLab, an open-source framework designed to democratize spatio-temporal agent data analysis in sports by addressing these key challenges. OpenSTARLab includes the Pre-processing Package that standardizes event and tracking data through Unified and Integrated Event Data and State-Action-Reward formats, the Event Modeling Package that implements deep learning-based event prediction, alongside the RLearn Package for reinforcement learning tasks. These technical components facilitate the handling of diverse data sources and support advanced analytical tasks, thereby enhancing the overall functionality and usability of the framework. To assess OpenSTARLab's effectiveness, we conducted several experimental evaluations. These demonstrate the superior performance of the specific event prediction model in terms of action and time prediction accuracies and maintained its robust event simulation performance. Furthermore, reinforcement learning experiments reveal a trade-off between action accuracy and temporal difference loss and show comprehensive visualization. Overall, OpenSTARLab serves as a robust platform for researchers and practitioners, enhancing innovation and collaboration in the field of soccer data analytics.",
+      "published": "2025-02-05T00:14:18+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2502.02785v2",
+      "first_seen_time": "2026-09-24T04:27:37.857459+00:00",
+      "pushed_time": "2026-09-24T04:25:49.356426+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2406.12252",
+      "title": "Language and Multimodal Models in Sports: A Survey of Datasets and Applications",
+      "authors": [
+        "Haotian Xia",
+        "Zhengbang Yang",
+        "Yun Zhao",
+        "Yuqing Wang",
+        "Jingxi Li",
+        "Rhys Tracy",
+        "Zhuangdi Zhu",
+        "Yuan-fang Wang",
+        "Hanjie Chen",
+        "Weining Shen"
+      ],
+      "abstract": "Recent integration of Natural Language Processing (NLP) and multimodal models has advanced the field of sports analytics. This survey presents a comprehensive review of the datasets and applications driving these innovations post-2020. We overviewed and categorized datasets into three primary types: language-based, multimodal, and convertible datasets. Language-based and multimodal datasets are for tasks involving text or multimodality (e.g., text, video, audio), respectively. Convertible datasets, initially single-modal (video), can be enriched with additional annotations, such as explanations of actions and video descriptions, to become multimodal, offering future potential for richer and more diverse applications. Our study highlights the contributions of these datasets to various applications, from improving fan experiences to supporting tactical analysis and medical diagnostics. We also discuss the challenges and future directions in dataset development, emphasizing the need for diverse, high-quality data to support real-time processing and personalized user experiences. This survey provides a foundational resource for researchers and practitioners aiming to leverage NLP and multimodal models in sports, offering insights into current trends and future opportunities in the field.",
+      "published": "2024-06-18T03:59:26+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2406.12252v1",
+      "first_seen_time": "2026-09-24T04:27:37.859111+00:00",
+      "pushed_time": "2026-09-24T04:25:49.356426+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2406.08749",
+      "title": "Mathematical models for off-ball scoring prediction in basketball",
+      "authors": [
+        "Rikako Kono",
+        "Keisuke Fujii"
+      ],
+      "abstract": "In professional basketball, the accurate prediction of scoring opportunities based on strategic decision-making is crucial for spatial and player evaluations. However, traditional models often face challenges in accounting for the complexities of off-ball movements, which are essential for comprehensive performance evaluations. In this study, we propose two mathematical models to predict off-ball scoring opportunities in basketball, considering pass-to-score and dribble-to-score sequences: the Ball Movement for Off-ball Scoring (BMOS) and the Ball Intercept and Movement for Off-ball Scoring (BIMOS) models. The BMOS model adapts principles from the Off-Ball Scoring Opportunities (OBSO) model, originally designed for soccer, to basketball, whereas the BIMOS model also incorporates the likelihood of interception during ball movements. We evaluated these models using player tracking data from 630 NBA games in the 2015-2016 regular season, demonstrating that the BIMOS model outperforms the BMOS model in terms of team scoring prediction accuracy, while also highlighting its potential for further development. Overall, the BIMOS model provides valuable insights for tactical analysis and player evaluation in basketball.",
+      "published": "2024-06-13T02:17:19+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2406.08749v2",
+      "first_seen_time": "2026-09-24T04:27:37.860657+00:00",
+      "pushed_time": "2026-09-24T04:25:49.356426+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-09-20T04:37:44.047688+00:00"
+  "last_email_sent_time": "2026-09-24T04:25:49.356426+00:00"
 }
