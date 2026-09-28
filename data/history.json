@@ -718,7 +718,62 @@
       "pushed_time": "2026-09-24T04:25:49.356426+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2402.15952",
+      "title": "ViSTec: Video Modeling for Sports Technique Recognition and Tactical Analysis",
+      "authors": [
+        "Yuchen He",
+        "Zeqing Yuan",
+        "Yihong Wu",
+        "Liqi Cheng",
+        "Dazhen Deng",
+        "Yingcai Wu"
+      ],
+      "abstract": "The immense popularity of racket sports has fueled substantial demand in tactical analysis with broadcast videos. However, existing manual methods require laborious annotation, and recent attempts leveraging video perception models are limited to low-level annotations like ball trajectories, overlooking tactics that necessitate an understanding of stroke techniques. State-of-the-art action segmentation models also struggle with technique recognition due to frequent occlusions and motion-induced blurring in racket sports videos. To address these challenges, We propose ViSTec, a Video-based Sports Technique recognition model inspired by human cognition that synergizes sparse visual data with rich contextual insights. Our approach integrates a graph to explicitly model strategic knowledge in stroke sequences and enhance technique recognition with contextual inductive bias. A two-stage action perception model is jointly trained to align with the contextual knowledge in the graph. Experiments demonstrate that our method outperforms existing models by a significant margin. Case studies with experts from the Chinese national table tennis team validate our model's capacity to automate analysis for technical actions and tactical strategies. More details are available at: https://ViSTec2024.github.io/.",
+      "published": "2024-02-25T02:04:56+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2402.15952v1",
+      "first_seen_time": "2026-09-28T05:03:53.197615+00:00",
+      "pushed_time": "2026-09-28T05:02:12.338451+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2603.17324",
+      "title": "ShuttleEnv: An Interactive Data-Driven RL Environment for Badminton Strategy Modeling",
+      "authors": [
+        "Ang Li",
+        "Xinyang Gong",
+        "Bozhou Chen",
+        "Yunlong Lu",
+        "Jiaming Ji",
+        "Yongyi Wang",
+        "Yaodong Yang",
+        "Wenxin Li"
+      ],
+      "abstract": "We present ShuttleEnv, an interactive and data-driven simulation environment for badminton, designed to support reinforcement learning and strategic behavior analysis in fast-paced adversarial sports. The environment is grounded in elite-player match data and employs explicit probabilistic models to simulate rally-level dynamics, enabling realistic and interpretable agent-opponent interactions without relying on physics-based simulation. In this demonstration, we showcase multiple trained agents within ShuttleEnv and provide live, step-by-step visualization of badminton rallies, allowing attendees to explore different play styles, observe emergent strategies, and interactively analyze decision-making behaviors. ShuttleEnv serves as a reusable platform for research, visualization, and demonstration of intelligent agents in sports AI. Our ShuttleEnv demo video URL: https://drive.google.com/file/d/1hTR4P16U27H2O0-w316bR73pxE2ucczX/view",
+      "published": "2026-03-18T03:37:39+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2603.17324v1",
+      "first_seen_time": "2026-09-28T05:03:53.199381+00:00",
+      "pushed_time": "2026-09-28T05:02:12.338451+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2104.12056",
+      "title": "Swimmer Stroke Rate Estimation From Overhead Race Video",
+      "authors": [
+        "Timothy Woinoski",
+        "Ivan V. Bajić"
+      ],
+      "abstract": "In this work, we propose a swimming analytics system for automatically determining swimmer stroke rates from overhead race video (ORV). General ORV is defined as any footage of swimmers in competition, taken for the purposes of viewing or analysis. Examples of this are footage from live streams, broadcasts, or specialized camera equipment, with or without camera motion. These are the most typical forms of swimming competition footage. We detail how to create a system that will automatically collect swimmer stroke rates in any competition, given the video of the competition of interest. With this information, better systems can be created and additions to our analytics system can be proposed to automatically extract other swimming metrics of interest.",
+      "published": "2021-04-25T04:20:38+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2104.12056v2",
+      "first_seen_time": "2026-09-28T05:03:53.200982+00:00",
+      "pushed_time": "2026-09-28T05:02:12.338451+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-09-24T04:25:49.356426+00:00"
+  "last_email_sent_time": "2026-09-28T05:02:12.338451+00:00"
 }
