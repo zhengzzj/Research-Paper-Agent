@@ -773,7 +773,57 @@
       "pushed_time": "2026-09-28T05:02:12.338451+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2609.38413",
+      "title": "VidHarness: Evolving Agent Harnesses for Cost-Efficient Long Video Understanding",
+      "authors": [
+        "Susan Liang",
+        "Jianmin Wu",
+        "Daxiang Dong"
+      ],
+      "abstract": "Vision-language models (VLMs) can answer questions about hour-long videos, but processing every frame is prohibitively expensive, even though the evidence for a question usually spans only a few seconds. Video agents, i.e., harness programs wrapped around a frozen VLM, address this by observing the video selectively, yet existing harnesses are hand-crafted by experts through slow build-and-test cycles. We propose VidHarness, a framework that automates harness design for cost-efficient long video understanding, in which a harness proposer iteratively evolves harnesses based on execution feedback from an evolution environment. To escape the local optima of greedy refinement, we organize the evolution as Monte Carlo tree search (MCTS), and to reduce the evaluation cost, we integrate uncertainty-aware multi-fidelity validation, which screens new harnesses on a few questions and promotes only the promising ones. Since the best harness varies with the frame budget, we further introduce a mixture-of-harness that routes each question to a harness specialized for its budget. VidHarness sets new state-of-the-art results on LongVideoBench, Video-MME, and Video-Holmes, outperforms the strongest hand-crafted video agent by up to $11.2$ points, and generalizes to the knowledge-intensive benchmarks Video-MMMU and MMVU with fewer than half of the frames of uniform sampling.",
+      "published": "2026-09-29T19:06:54+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2609.38413v1",
+      "first_seen_time": "2026-10-02T05:19:50.375532+00:00",
+      "pushed_time": "2026-10-02T05:18:03.865307+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2609.38119",
+      "title": "VideoLoop: Looped Working Memory Against Semantic Thrashing in Long-Form Video Agents",
+      "authors": [
+        "Jianming Xu",
+        "Jinfa Huang",
+        "Jingyang Lin",
+        "Zhengyuan Yang",
+        "Jiebo Luo"
+      ],
+      "abstract": "Long-form video understanding requires multimodal agents to iteratively gather evidence over many reasoning steps. However, most existing agentic methods suffer from semantic thrashing: as append-only working memory grows, attention to key evidence collapses, and the agent loses access to what it has already found. First, we provide a structural argument showing that append-only memory can incorporate newly observed target evidence, but cannot remove accumulated noise or prevent ordered context growth without a rewrite operator. Second, motivated by this analysis, we propose VideoLoop, a multimodal agent with two coupled loops. The outer loop reasons over the video and the inner loop, after each step, retrieves artifacts from an unbounded filesystem of past observations and intermediate analysis, and rewrites a bounded working memory. Extensive experiments demonstrate the effectiveness of VideoLoop, which improves four popular LVLM backbones in a plug-and-play manner, with an average gain of 4.2% points over baseline on VideoMME (long). Further analysis of working memory suggests that VideoLoop mitigates semantic thrashing: on the hardest quarter of VideoMME (long) questions, a blind judge that reads only the agent's context answers 81.1% correctly, versus 60.9% for the append-only agent. With Gemini 3.1 Pro, VideoLoop reaches 88.3% on VideoMME (long), 88.8% on VideoMMMU, and 80.9% on LongVideoBench (long).",
+      "published": "2026-09-29T17:50:21+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2609.38119v2",
+      "first_seen_time": "2026-10-02T05:19:50.377358+00:00",
+      "pushed_time": "2026-10-02T05:18:03.865307+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2609.28991",
+      "title": "Beneath the Scores: Rethinking Hallucination Evaluation for Video Understanding Models",
+      "authors": [
+        "Shuzhi Gong",
+        "Fengze Sun",
+        "Yuansan Liu"
+      ],
+      "abstract": "Video understanding is increasingly performed by multi-stage LLM agents that separate temporal grounding, visual observation, and reasoning. Yet these stages are typically evaluated on different benchmarks and distributions, making it difficult to determine where hallucinations originate. We first organize existing benchmarks around these stages and show that their scores provide inconsistent diagnostic signals: stronger stage-level performance does not reliably imply lower downstream hallucination, and even benchmarks targeting the same capability can disagree. We therefore introduce a causal stage-intervention protocol that overwrites individual stages while holding the downstream task fixed. Across 60,008 runs on three video-agent architectures, we find that grounding is the dominant source of downstream error, with roughly four times the causal impact of corrupting visual observations. Successful grounding depends primarily on locating the correct region rather than precise temporal overlap, explaining why standard mIoU metrics poorly predict downstream reliability. We further find that incorrect evidence is substantially more harmful than missing evidence. Finally, auditing existing benchmarks against these interventions reveals that their scores do not reliably predict causal cascade sensitivity and can fail under distribution shift. These results motivate intervention-based, stage-aware evaluation for trustworthy video agents.",
+      "published": "2026-09-24T04:02:18+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2609.28991v1",
+      "first_seen_time": "2026-10-02T05:19:50.379165+00:00",
+      "pushed_time": "2026-10-02T05:18:03.865307+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-09-28T05:02:12.338451+00:00"
+  "last_email_sent_time": "2026-10-02T05:18:03.865307+00:00"
 }
