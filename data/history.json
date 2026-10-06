@@ -823,7 +823,73 @@
       "pushed_time": "2026-10-02T05:18:03.865307+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2309.14753",
+      "title": "Advanced Volleyball Stats for All Levels: Automatic Setting Tactic Detection and Classification with a Single Camera",
+      "authors": [
+        "Haotian Xia",
+        "Rhys Tracy",
+        "Yun Zhao",
+        "Yuqing Wang",
+        "Yuan-Fang Wang",
+        "Weining Shen"
+      ],
+      "abstract": "This paper presents PathFinder and PathFinderPlus, two novel end-to-end computer vision frameworks designed specifically for advanced setting strategy classification in volleyball matches from a single camera view. Our frameworks combine setting ball trajectory recognition with a novel set trajectory classifier to generate comprehensive and advanced statistical data. This approach offers a fresh perspective for in-game analysis and surpasses the current level of granularity in volleyball statistics. In comparison to existing methods used in our baseline PathFinder framework, our proposed ball trajectory detection methodology in PathFinderPlus exhibits superior performance for classifying setting tactics under various game conditions. This robustness is particularly advantageous in handling complex game situations and accommodating different camera angles. Additionally, our study introduces an innovative algorithm for automatic identification of the opposing team's right-side (opposite) hitter's current row (front or back) during gameplay, providing critical insights for tactical analysis. The successful demonstration of our single-camera system's feasibility and benefits makes high-level technical analysis accessible to volleyball enthusiasts of all skill levels and resource availability. Furthermore, the computational efficiency of our system allows for real-time deployment, enabling in-game strategy analysis and on-the-spot gameplan adjustments.",
+      "published": "2023-09-26T08:29:02+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2309.14753v1",
+      "first_seen_time": "2026-10-06T06:03:13.851865+00:00",
+      "pushed_time": "2026-10-06T06:01:26.052633+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2610.05400",
+      "title": "CASE: Cost-Aware Stopping for Efficient Long-Video Agents",
+      "authors": [
+        "Yiming Du",
+        "Chenghao Liu",
+        "Zhiyuan Liu",
+        "Fangxing Zheng",
+        "Zhao Wang",
+        "Junnan Nie",
+        "Songfang Huang"
+      ],
+      "abstract": "Long-video agents can actively gather question-relevant evidence, but they typically leave a central decision implicit: when has the agent seen enough to answer? We propose CASE, a plug-in termination framework that frames this decision as policy-conditioned sequential stopping. At each causal checkpoint, CASE combines an auxiliary multiple-choice assessment of accumulated evidence with the host agent's execution state. From complete native trajectories, we construct a cost-aware target that compares answering now with stopping later along the same search path, accounting jointly for answer correctness and the full cost of continued reasoning. A lightweight Ridge regressor learns this decision gap and produces STOP/CONTINUE decisions. We evaluate three vision-language models with VideoSeek and AVP. On Video-MME, end-to-end accuracy changes by +0.67 percentage points on average while CASE reduces model-token use by 53.63%. The same frozen policies then transfer zero-shot to LongVideoBench and MLVU, with end-to-end accuracy changes of +3.38 and +4.58 points while saving 58.78% and 51.28% of model tokens, respectively. Across all agent-model-benchmark combinations, CASE attains the highest accuracy-efficiency Pareto-frontier coverage among the compared stopping methods (83.3%) at the selected operating points. Online execution preserves this favorable accuracy-efficiency trade-off and additionally reduces measured runtime by 54.1% on average. CASE provides a plug-in termination framework for long-video reasoning agents, enabling them to decide when further evidence acquisition is no longer worthwhile.",
+      "published": "2026-10-04T17:35:33+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2610.05400v1",
+      "first_seen_time": "2026-10-06T06:03:13.853548+00:00",
+      "pushed_time": "2026-10-06T06:01:26.052633+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2609.19664",
+      "title": "VideoResearcher: Self-Improving Tool Design for Long-Video Understanding",
+      "authors": [
+        "Dingqiang Ye",
+        "Dongdi Zhao",
+        "Kaishen Wang",
+        "Qingqiao Hu",
+        "Jingchen Sun",
+        "Yijun Liang",
+        "Yuqi Jia",
+        "Yiqiao Huang",
+        "Yunjie Tian",
+        "Jiaxing Zhang",
+        "Chuanyang Jin",
+        "Ke Zhang",
+        "Vishal M. Patel",
+        "Di Fu"
+      ],
+      "abstract": "Video agents have made substantial progress in long-video understanding. Yet effective video-agent systems require costly, time-consuming manual design and trial and error. Current self-improvement methods either refine low-impact prompts, recombine predefined micro-tools, or struggle with convergence in harness optimization. To bridge this gap, we target high-impact video-tool with VideoResearcher, a training-free multi-agent framework that autonomously designs, tests, and refines tools for video understanding, like a human researcher. VideoResearcher operates through dual Solving and Evolving loops: it analyzes tool-use trajectories to identify capability gaps, coordinates specialized agents to develop and validate executable tools, and reuses evolved tools to strengthen evidence acquisition in subsequent video reasoning. Through iterative tool refinement and validation, it progressively strengthens evidence acquisition without updating model parameters. VideoResearcher achieves state-of-the-art performance among self-improving agents and approaches the human-designed upper bound, demonstrating a training-free paradigm for long-video understanding that expands agent capabilities through autonomous tool development while reducing costly manual engineering.",
+      "published": "2026-09-17T04:04:23+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2609.19664v1",
+      "first_seen_time": "2026-10-06T06:03:13.855111+00:00",
+      "pushed_time": "2026-10-06T06:01:26.052633+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-10-02T05:18:03.865307+00:00"
+  "last_email_sent_time": "2026-10-06T06:01:26.052633+00:00"
 }
