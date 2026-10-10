@@ -889,7 +889,65 @@
       "pushed_time": "2026-10-06T06:01:26.052633+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2610.11171",
+      "title": "VAMR: Multi-Question Agentic Reasoning for Efficient Long-Form Video Understanding",
+      "authors": [
+        "Runquan Gui",
+        "Hanzhu Chen",
+        "Zehao Wang",
+        "Hanxin Zhu",
+        "Xin Li",
+        "Zhibo Chen"
+      ],
+      "abstract": "Long-form video understanding often involves multiple questions about different aspects of the same recording. Yet existing video agents typically process each question through an isolated tool-use trajectory. This repeatedly restarts video exploration and memory construction, missing opportunities to acquire evidence jointly and progressively build a shared understanding that supports the complete question set. We introduce \\textbf{VAMR} (\\textbf{V}ideo \\textbf{A}gent for \\textbf{M}ulti-Question \\textbf{R}easoning), which coordinates all questions about a video through one shared tool-use trajectory. At each round, a persistent policy model can invoke tools for one or more unresolved questions and submit answers for questions with sufficient evidence. Question-conditioned visual perception retrieves fine-grained clues for several questions in one call, while layered multi-question memory integrates reusable context into a shared video story and preserves separate evidence for individual questions. After supervised fine-tuning initializes this interaction protocol, we propose question-horizon policy optimization (\\qhpo) to optimize shared trajectories in which questions progress and finish at different rounds. Specifically, a question-level critic estimates the value of each active question, while round alignment maps each question advantage to the rounds that directly serve it before the aligned advantages are aggregated to optimize the shared actor. Across LVBench, Video-Holmes, and LongVideoBench, VAMR achieves the highest accuracy overall and the fewest reasoning rounds among iterative methods. On LVBench, it reaches 62.1\\% accuracy, exceeding VideoARM by \\textbf{4.3} points while reducing reasoning rounds and processed frames by \\textbf{85.9\\%} and \\textbf{61.4\\%}.",
+      "published": "2026-10-08T03:26:54+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2610.11171v1",
+      "first_seen_time": "2026-10-10T05:33:18.679535+00:00",
+      "pushed_time": "2026-10-10T05:31:31.176537+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2609.12818",
+      "title": "Online Video Agent Harness for Long Video Understanding",
+      "authors": [
+        "Sen Yang",
+        "Boqiang Duan",
+        "Jing Yang",
+        "Weihao Bo",
+        "Jie Liu",
+        "Boyuan Tong",
+        "Ze Feng",
+        "Wenkang Zhang",
+        "Jingdong Wang",
+        "Hua Wu"
+      ],
+      "abstract": "Long video understanding often behaves like a visual needle-in-a-haystack problem: query-relevant evidence is sparsely distributed across long temporal spans, while packing dense frames into a single VLM context incurs \\textit{context rot} and high cost. Existing video agents often rely on query-agnostic offline preprocessing or ad hoc tool sets, which can miss query-specific details and waste computation. In this work, we present VideoXAgent, a purely online video-agent harness for long video understanding that starts from the given video file and user query, plans and decomposes the task, invokes specialized expert tools on demand, and aggregates multimodal evidence to produce a final answer while resolving conflicts among observations. To support this on-demand invocation, we design a suite of heterogeneous expert tools guided by a data-driven taxonomy of atomic capabilities, spanning scripts, VLMs, and domain models (e.g., detection, OCR, ASR, face recognition). The harness further enforces objective evidence prompting and budget-aware control to curb hallucination and non-termination. Across Video-MME-Long, LongVideoBench-Long, LVBench, and MINERVA, VideoXAgent is competitive with frontier LMMs and video agents under a smaller context footprint---about 50k tokens of agent context per sample, even on hour-long videos. In particular, on complex video-reasoning benchmarks such as MINERVA, it matches this level while using only about 15\\% of the context of a 1,024-frame dense-packing baseline. Notably, the harness remains effective with a visually weak or even text-only orchestrator, suggesting that strong long-video understanding can emerge from progressive agentic evidence seeking rather than from packing the full video into a single context. Project page: https://go-agent-x.github.io/video_agent_harness/",
+      "published": "2026-09-11T13:13:03+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2609.12818v1",
+      "first_seen_time": "2026-10-10T05:33:18.681265+00:00",
+      "pushed_time": "2026-10-10T05:31:31.176537+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2609.09895",
+      "title": "Can We Trust Video Hallucination Detectors? VidHalLoc for Evaluating the Evaluators",
+      "authors": [
+        "Xinyu Chen",
+        "Adnan Mahmood",
+        "Mark Dras"
+      ],
+      "abstract": "Video-language models and video agents can produce hallucinations that conflict with spatiotemporal evidence. Existing benchmarks mainly evaluate model hallucinations, and heterogeneous mechanisms make detector reliability difficult to compare. We introduce VidHalLoc, a benchmark that evaluates hallucination detection methods under a unified diagnostic evaluation protocol using 2,000 adversarial hallucination samples across Video Question Answering and Video Captioning tasks, spanning Ontology and Dynamic hallucination categories. To construct VidHalLoc efficiently, we introduce VideoHALO, a Harness Engineering-informed multi-agent workflow that decomposes data construction into four executable stages supported by a memory system and a communication protocol. Evaluation of fifteen methods reveals that the four dedicated detectors peak at an Overall accuracy of only 34.63%, indicating limited reliability across video hallucination types [Dataset Repository: https://huggingface.co/datasets/wesfggfd/VidHalLoc].",
+      "published": "2026-09-09T08:52:23+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2609.09895v1",
+      "first_seen_time": "2026-10-10T05:33:18.682867+00:00",
+      "pushed_time": "2026-10-10T05:31:31.176537+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-10-06T06:01:26.052633+00:00"
+  "last_email_sent_time": "2026-10-10T05:31:31.176537+00:00"
 }
