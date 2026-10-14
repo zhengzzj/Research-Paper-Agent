@@ -947,7 +947,63 @@
       "pushed_time": "2026-10-10T05:31:31.176537+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2610.15389",
+      "title": "VideoEvoHarness: Self Evolving Agent Harness from Unlabeled Videos for Video Understanding",
+      "authors": [
+        "Weixin Xu",
+        "Yifan Liu",
+        "Yi Wang",
+        "Mingfei Rong",
+        "Zhenyu Yang",
+        "Zhisheng Zhong",
+        "Shengsheng Qian",
+        "Changsheng Xu"
+      ],
+      "abstract": "Video understanding agents rely on a harness to acquire evidence, use tools, and reason, but improving it requires substantial effort. Recent self evolution methods seek to optimize harnesses through execution feedback to reduce human intervention. However, existing methods often rely on annotated video questions and answers or focus on updating model parameters, leaving harness evolution from unlabeled videos underexplored. VideoEvoHarness jointly evolves a Questioner and a Solver harness from unlabeled videos with frozen model parameters. The Questioner constructs questions and computes reference answers directly from video memory records. Question quality assessments and Solver execution trajectories guide question generation policy revisions. The Solver supports evolving skills, strategies, hyperparameters, and tools using execution feedback. Executable strategies define workflows in code, reducing repeated interpretation of natural language instructions. Each round, candidate harnesses are compared on identical validation questions, with validated improvements retained for later use. Experiments on benchmarks and a dedicated benchmark question set, using videos disjoint from evolution videos, show higher overall accuracy than initially and transfer gains across backbones. Overall accuracy on this set also improves progressively across rounds. This supports our foundational framework for harness evolution from unlabeled videos, opening a promising direction for self evolving video agents. Code is available at https://github.com/Wei-Xin-Xu/VideoEvoHarness.",
+      "published": "2026-10-11T06:36:08+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2610.15389v1",
+      "first_seen_time": "2026-10-14T04:37:28.317585+00:00",
+      "pushed_time": "2026-10-14T04:35:28.518012+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2609.07135",
+      "title": "NutriBench-Kitchen: Benchmarking Embodied AI for Nutrition Management",
+      "authors": [
+        "Yulin Wei",
+        "Xiangchen Wang",
+        "Jianhui Pan",
+        "Jinyu Xiao",
+        "Zheng Tan",
+        "Ruozai Tian",
+        "Guanhua Chen",
+        "Feng Zheng"
+      ],
+      "abstract": "An embodied kitchen assistant must do more than recognize food in isolated frames. It must track ingredient states over time and integrate visual observations with recipe and nutritional knowledge to support constraint-aware decision-making. We formalize this capability as \\emph{Embodied Nutrition Management}: perceiving nutrition-relevant events, maintaining a persistent food state, and using it for knowledge-grounded planning. Existing benchmarks evaluate static food understanding or embodied cooking actions, but do not measure whether an agent can continuously update and use nutrition-relevant states in dynamic kitchens. To fill this gap, we introduce \\textbf{NutriBench-Kitchen}, a benchmark containing 1,500 manually verified question--answer pairs from 160 cooking videos. It covers five task families: Ingredient Entry, Memory Management, Recipe Query, Long-Term Planning, and Short-Term Planning, spanning food-state construction, maintenance, knowledge retrieval, and decision-making across different planning horizons. Evaluations of proprietary and open-source large vision-language models reveal a substantial gap from human performance, particularly in quantitative ingredient estimation, long-term state tracking, and reasoning under interacting constraints. We further introduce \\textbf{Nutri-Vgent}, a diagnostic long-video agent with separate episodic, food-state, and recipe memories. Its consistent improvements demonstrate the value of explicit state representations and structured memory for nutrition management. Together, NutriBench-Kitchen and Nutri-Vgent provide a testbed for studying persistent state tracking and knowledge-grounded reasoning in dynamic kitchens. Code is available at https://github.com/V1ol1n/NutriBench-Kitchen.",
+      "published": "2026-09-07T07:34:33+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2609.07135v1",
+      "first_seen_time": "2026-10-14T04:37:28.319583+00:00",
+      "pushed_time": "2026-10-14T04:35:28.518012+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2609.07099",
+      "title": "Ambient @ EgoProactive 2026 : Proactive Egocentric Assistance with Visually Grounded Supervision",
+      "authors": [
+        "Logesh Kumar Umapathi"
+      ],
+      "abstract": "We present our submission to the EgoProactive track of the ECCV 2026 Wearable AI Challenge, which ranked first in the large-model division and second in the <=2B division. The task requires a wearable assistant to decide after each eight-second segment of egocentric video whether to intervene or remain silent. Our approach has two main components. First, we reformulate intervention timing as single-token classification. Rather than generating either $interrupt$<utterance> or $silent$, the model predicts yes or no, and we derive the decision from the renormalised probabilities of these two tokens. This formulation improved macro-F1 by 0.249 and G-mean by 0.30 over free-form generation. Second, because labelled data were limited to the released validation set, we generated additional supervision using a tool-calling video agent that inspects each clip and assigns intervention timestamps. A narration-only alternative was four times larger and ten times cheaper, but transferred worse than supervision from an unrelated real corpus, suggesting that visual grounding is more important than annotation volume for this task.",
+      "published": "2026-09-07T06:43:33+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2609.07099v2",
+      "first_seen_time": "2026-10-14T04:37:28.321417+00:00",
+      "pushed_time": "2026-10-14T04:35:28.518012+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-10-10T05:31:31.176537+00:00"
+  "last_email_sent_time": "2026-10-14T04:35:28.518012+00:00"
 }
