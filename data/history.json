@@ -1155,7 +1155,73 @@
       "pushed_time": "2026-10-22T04:22:11.543665+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2608.15685",
+      "title": "Counterfactual Sensitivity Is Not Repairability: Auditing Replay Probes for Video Evidence",
+      "authors": [
+        "Rama AlHamidi",
+        "Rasul Khanbayov",
+        "Erchin Serpedin",
+        "Hasan Kurban"
+      ],
+      "abstract": "Tool-using video agents retrieve visual evidence before answering, but the final answer is not forced to depend on what was retrieved. The natural black box test is counterfactual: destroy the semantic content of the frames the agent retrieved and check whether the answer changes, against a matched sham that re-executes the identical pipeline on those same frames. We introduce CARVE, a black-box counterfactual probe that compares answer changes under matched SHAM and DESTROY replays. Across three independent k=3 runs on a frozen VideoExplorer-style agent, DESTROY changes the answer 29.3 percentage points more often than SHAM, yielding a large and reproducible aggregate effect. Question-level scores are less stable, and increasing the replay budget from k=3 to k=10 reduces ties but weakens the original zero-threshold routing policy. At k=3, CARVE selects 538 of 1,258 LVBench questions and improves accuracy by 3.26 points, with higher fallback yield than most matched random subsets. The score shows only a weak association with annotated temporal coverage, so CARVE is best understood as a routing signal rather than a direct grounding classifier. Our implementation is available at https://github.com/KurbanIntelligenceLab/CARVE.",
+      "published": "2026-08-16T11:20:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2608.15685v1",
+      "first_seen_time": "2026-10-26T04:26:26.625233+00:00",
+      "pushed_time": "2026-10-26T04:24:32.902402+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2608.14015",
+      "title": "MedClaw: Heuristic Agent Harness for Long-Horizon Surgical Video Reasoning",
+      "authors": [
+        "Yingying Fan",
+        "Penghui Du",
+        "Leyan Zhu",
+        "Runze He",
+        "Zimeng Wu",
+        "Yuxuan Zhang",
+        "Liang Chen",
+        "Jiahao Xie",
+        "Jiangtang Wang",
+        "Shuai Shao",
+        "Anchao Yang",
+        "Yutong Bai",
+        "Yan Wang"
+      ],
+      "abstract": "Understanding tens-of-minutes surgical videos requires long-horizon temporal reasoning, answering what happens before, after, or across stages of a procedure by grounding the question in visual evidence spread across time. Existing approaches handle this poorly: a one-shot vision-language model (VLM) compresses the whole procedure to fit its context window and loses the detail a \"before\" or \"after\" question depends on, while video agents that train the model where to look are data-hungry and transfer poorly to out-of-domain surgery. We build an agent harness that separates reasoning from perception and improves by evolving context rather than optimizing weights. A text-only orchestrator plans which evidence to gather and issues an auditable sequence of tool calls, while frozen vision-language sub-agents execute each call over the pixels, viewing, cropping, inspecting frames, and retrieving external knowledge. We further propose a gradient-free, reward-gated Heuristic Skill Distillation loop that mines the agent's own low-scoring traces and keeps a candidate skill only when it raises a validation reward, yielding reusable retrieval skills, notably directed re-look. Growing an external skill library rather than tuning weights, the loop adapts from only about 100 labeled examples, far fewer than supervised or reinforcement fine-tuning requires. To evaluate this agent, we introduce MedClawBench, a de-leaked, doctor-grounded benchmark of 1,123 questions over self-built long neurosurgery recordings and a held-out public lecture-video test split. Across both datasets and all four evaluation dimensions, our agent consistently outperforms one-shot VLMs and general video-agent frameworks, with the largest gains on the long, out-of-domain neurosurgery videos. Project page: https://fyycs.github.io/medclaw/.",
+      "published": "2026-08-14T07:03:06+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2608.14015v1",
+      "first_seen_time": "2026-10-26T04:26:26.627305+00:00",
+      "pushed_time": "2026-10-26T04:24:32.902402+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2608.07585",
+      "title": "LAVE: Latent Visual Evidence-Enhanced Planning for Video Tool-use Agents",
+      "authors": [
+        "Zijian Wang",
+        "Junnan Zhu",
+        "Rongzhen Li",
+        "Xiao Liu",
+        "Guohui Xiang",
+        "Quan Lu",
+        "Lijia Liu",
+        "Yining Wang",
+        "Jiang Zhong",
+        "Kaiwen Wei"
+      ],
+      "abstract": "Long-video understanding requires models to efficiently acquire and reuse sparse visual evidence from long and redundant video streams. Recent video tool-use agents address this challenge by iteratively invoking visual Tools at different temporal scales, but their Tool-Planner communication typically relies on textual observations. Such text-only interfaces provide lossy summaries of Tool computations, causing previously computed visual evidence not verbalized to be discarded and unavailable for subsequent planning. We identify this limitation as the Tool observation bottleneck and propose Latent Visual Evidence-Enhanced Planning (LAVE), a training-free framework for reusing latent visual evidence from completed Tool calls. LAVE introduces a dual-channel observation interface: the visible channel preserves the original textual trajectory, while the latent channel stores pre-verbal visual updates with their Tool roles, source-frame timestamps, and visual locations. During planning, LAVE retrieves evidence relevant to the current Planner state but not covered by textual observations, and integrates it through bounded timestamp-aligned latent updates with entropy-constrained frame-time routing. This enables video agents to reuse existing visual computation without additional training, frame replay, or modifications to the original orchestration. Extensive experiments on Video-MME, LongVideoBench, and CG-Bench show that LAVE consistently improves video tool-use agents across backbones. Under a comparable frame budget, LAVE improves the Video-MME overall score by 3.76 points over the strongest baseline, demonstrating the effectiveness of latent visual evidence reuse for multi-step video-agent planning.",
+      "published": "2026-08-05T10:25:47+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2608.07585v1",
+      "first_seen_time": "2026-10-26T04:26:26.629239+00:00",
+      "pushed_time": "2026-10-26T04:24:32.902402+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-10-22T04:22:11.543665+00:00"
+  "last_email_sent_time": "2026-10-26T04:24:32.902402+00:00"
 }
