@@ -1221,7 +1221,72 @@
       "pushed_time": "2026-10-26T04:24:32.902402+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2610.35229",
+      "title": "Joint Latent Reasoning and Observation for Agentic Video Understanding",
+      "authors": [
+        "Junzhang Liu",
+        "Hao Yuan",
+        "Yiming Wu",
+        "Qi Zhang",
+        "Long Chen",
+        "Zhecan Wang"
+      ],
+      "abstract": "Effective video agents must learn not only how to answer, but also where to look next. Transferring this capability to smaller models is challenging because each observation serves two purposes: supporting an answer and guiding the search for further evidence. Textual descriptions may capture what is currently visible while omitting cues needed for subsequent acquisition. We introduce Latent Agentic Reasoning for Video Analysis (LARVA), a framework that distills multi-round video agents through jointly learned latent reasoning and visual observations. Rather than communicating through captions, an observer passes compact continuous representations to a reasoner that selects the next acquisition action or produces the final answer. Crucially, action and answer supervision propagate through this interface, training the observer to communicate information useful for downstream decisions. Observation reconstruction and reasoning-distribution alignment provide auxiliary supervision from textual teacher trajectories. Across five video-understanding benchmarks, LARVA achieves strong performance with 4B and 7B backbones. On VideoHolmes, Video-MME, and LVBench, the 7B model outperforms a textual CoT student trained on the same teacher trajectories by 5.1, 2.5, and 3.7 percentage points, respectively. These results highlight the value of jointly learning how agents represent evidence and act on it when distilling video-understanding capabilities.",
+      "published": "2026-10-26T11:18:58+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2610.35229v2",
+      "first_seen_time": "2026-10-30T05:30:15.088200+00:00",
+      "pushed_time": "2026-10-30T05:28:22.876497+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2610.34662",
+      "title": "StreamVibe: Proactive Video Agents for Evolving User Intent",
+      "authors": [
+        "Chengzhi Liu",
+        "Yuxiang Lai",
+        "Yuzhe Yang",
+        "Yanqing Liu",
+        "Jiheng Hou",
+        "Yue Cao",
+        "Haonan Wang",
+        "Ruixi Fan",
+        "Lan Wang",
+        "Sheng Liu",
+        "Songyou Peng",
+        "Yale Song",
+        "Kevin Qinghong Lin",
+        "Xin Eric Wang",
+        "Jui-Hsin Lai",
+        "Youbao Tang"
+      ],
+      "abstract": "Vision-language models are shifting from offline passive understanding toward online proactive interaction. However, prevailing methods largely rely on explicit requests while overlooking implicit user intents (e.g., \"where should I click next?\" when a user is navigating a website) and fail to continuously update their understanding as user intents evolve. These limitations make them less suitable for intent-aware interaction in real-world scenarios. To address these challenges, we introduce StreamVibe-Bench, a new benchmark that serves as a testbed for user intent understanding and interaction, comprising 4.1K evaluation samples and 85K training samples spanning explicit, implicit, and dynamic intents. Building on this benchmark, we develop StreamVibe-VL, a streaming proactive model that infers implicit user intents from continuous observations and dynamically adapts its interactions as these intents evolve. We further introduce StreamVibe-Harness, which maintains user intents as persistent states with flexible lifecycles through hierarchical memory, enabling it to track the latest user intents and environmental states. Our experiments reveal three key findings: (i) StreamVibe-VL preserves strong general video understanding capabilities while improving response timing and answer quality by 10.7% over existing baselines; (ii) existing proactive models remain limited in understanding user intents and determining when to respond, especially under implicit and dynamic intents; and (iii) StreamVibe-Harness further improves response consistency and adaptation during sustained interactions, resulting in a 12.3% gain in proactive interaction performance.",
+      "published": "2026-10-26T00:48:27+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2610.34662v2",
+      "first_seen_time": "2026-10-30T05:30:15.112700+00:00",
+      "pushed_time": "2026-10-30T05:28:22.876497+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2610.40212",
+      "title": "Benchmarking color judgment in multimodal LLMs with CIE-computable ground truth",
+      "authors": [
+        "Shuwei Yue",
+        "Kaida Xiao",
+        "Zhihua Wang",
+        "Qiao Chen"
+      ],
+      "abstract": "Multimodal large language models (MLLMs) are now used as zero-shot judges of image quality, but their color judgments are rarely tested with colorimetric ground truth. We present a five-task benchmark based on the CIE colorimetric framework: AWB pair judgment, skin-tone bias direction, CCT estimation, CIE Delta E 2000 pair ordering, and color naming under changing illuminants. We test eight MLLM endpoints, including four Qwen3-VL variants, GLM-4.5V, GPT-5.4, Claude-Opus-4.7, and Gemini-3.1-Pro. The models often solve coarse binary AWB judgments, but they remain weak on numeric CCT estimation and on some fine color-difference judgments. On ColorChecker-24 stimuli, the three closed-weight frontier models reach CCT MAE of 715-1056 K, compared with 1358-2133 K for the five open-weight models. A non-ColorChecker control shows that this advantage is partly template-dependent. The results suggest that current MLLMs have useful color words and coarse visual priors, but their color judgments are not reliably calibrated to CIE-computable color differences.",
+      "published": "2026-10-29T14:58:08+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2610.40212v1",
+      "first_seen_time": "2026-10-30T05:30:15.173023+00:00",
+      "pushed_time": "2026-10-30T05:28:22.876497+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-10-26T04:24:32.902402+00:00"
+  "last_email_sent_time": "2026-10-30T05:28:22.876497+00:00"
 }
