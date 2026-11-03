@@ -1286,7 +1286,67 @@
       "pushed_time": "2026-10-30T05:28:22.876497+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.01125",
+      "title": "What Does a Safety Label Measure? Auditing Situational-Safety Benchmarks for Multimodal LLMs",
+      "authors": [
+        "Wayner Barrios",
+        "Kenneth Barrios"
+      ],
+      "abstract": "Situational-safety benchmarks label each scene SAFE or UNSAFE and score a multimodal large language model (MLLM) against that label, usually by judging its free-form answer, and these scores guide deployment. We ask what such a label measures. A label score can come from the scene, the request or the benchmark's own files. We propose the Benchmark Card, seven measured fields that tell them apart, and fill it for six benchmarks. Only MSSBench chat leaks the label through its image files: image size alone reaches 82.3% accuracy, matching or beating six of seven commercial models. Elsewhere the signal outside the scene comes from design. In MOSSBench the item partition fixes the label, and on HoliSafe the request alone ranks pairs about as well as the scene. On our corrected chat split, the size rule falls to chance. We then introduce the Spot-Stop decomposition, which compares ranking with labelling on pairs of a safe and an unsafe scene. It splits the gap above a label-swap null into three parts: a threshold part, overlap between safe and unsafe scores, and order that holds only within a pair. Most of fourteen open MLLMs rank better than they label, beyond what their AUROC predicts. On chat, one shared threshold repairs a third to a half of the excess, and label-free recentering recovers it on balanced batches. Recentering on unlabelled scenes of the same situation improves ranking on VSCBench for 13 of 14 models.",
+      "published": "2026-10-31T17:12:32+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.01125v1",
+      "first_seen_time": "2026-11-03T06:24:06.584936+00:00",
+      "pushed_time": "2026-11-03T06:22:03.428893+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.00638",
+      "title": "ElectroChemLLM: A Multimodal LLM Pipeline for High-Fidelity Electrochemical Informatics",
+      "authors": [
+        "Dikshya Mohanty",
+        "Manoj Praveen Nandigama",
+        "Kuldeepsinh Raj",
+        "Sourav Kanti Maiti",
+        "Jiannan Yang",
+        "Ruiqi Luo",
+        "Srinivasa Phani Madhav Marupudi",
+        "Mounika Geriki",
+        "Prayag Raghunandan",
+        "Puneet Lingutla",
+        "Tengfei Ma",
+        "Niranjan Balasubramanian",
+        "Nav Nidhi Rajput"
+      ],
+      "abstract": "Electrochemistry is central to solving many modern-day challenges, including energy storage systems for a sustainable future, and its advancement relies heavily on the data from past findings. Existing automated pipelines are limited by text-only architectures, context fragmentation, and numerical hallucinations - collectively preventing accurate, large-scale curation of property databases. We introduce ElectrochemLLM, a multimodal information extraction pipeline that jointly identifies structured electrochemical records encompassing electrolyte compositions, electrode materials, cell configurations, and their measured physicochemical properties from unstructured scientific PDFs at scale. By combining hybrid document parsing with vision-capable LLM orchestration, the pipeline extracts verifiable, structured data across text, tables, and figures. Evaluated on the battery-electrolyte subset of our manually annotated benchmark of 232 papers, ElectrochemLLM achieves an F-1 score of 0.97, and has been applied to curate ElectroChemDB, a structured database spanning 15,000 electrochemical research articles. We demonstrate the utility of this resource by training machine learning models for electrolyte property prediction, illustrating a complete pathway from unstructured literature to predictive materials discovery.",
+      "published": "2026-10-31T05:05:27+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.00638v1",
+      "first_seen_time": "2026-11-03T06:24:06.586785+00:00",
+      "pushed_time": "2026-11-03T06:22:03.428893+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2610.35309",
+      "title": "Shared Context, Separate Engines: Stateful Streaming Inference for Multimodal LLMs on Edge SoCs",
+      "authors": [
+        "Yilong Li",
+        "Chengpo Yan",
+        "Yijing Zeng",
+        "Hanlei Wu",
+        "Mingjun Song",
+        "Suman Banerjee"
+      ],
+      "abstract": "Edge SoCs combine CPUs, GPUs, and NPUs, yet runtimes for multimodal large language models (MLLMs) keep generation on one engine and leave others idle. Streaming workloads allow ingestion and answering to overlap, but backend-local KV state binds queries to the engine that built their history. Stage performance and co-running interference vary, so no single placement wins across SoCs and workloads. \\name separates logical history from engine-specific KV state so any language engine can continue a stream. Stateful Streaming Generation overlaps ingestion and answering, while Concurrent Sequence Generation serves ready queries in parallel. Phase-level state continuation lets one engine prefill a query and another decode the answer, freeing the first to resume ingestion. State-Driven Execution Planning (SDEP) chooses paths by predicted completion time and sets each engine's share of queries using arrival rates and measured service times. Across M4 Max, RK3588, and QCS6490, \\name beats the strongest single-engine baselines, even when they reuse context. On M4 Max, SDEP cuts live-stream p95 time to first token by $76\\%$, with every first token within one second, and raises throughput under backlog by up to $35\\%$ over Metal-only execution with context reuse. On two RK3588 streams, SDEP delivers $19.6\\%$ higher request throughput than the best single engine with context reuse and $27.2\\%$ more than parallel engines without shared state. Stateful Streaming Generation reaches up to $2.48\\times$ serial throughput on the same engines. Every answer matches its serial reference.",
+      "published": "2026-10-26T12:13:23+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2610.35309v3",
+      "first_seen_time": "2026-11-03T06:24:06.588423+00:00",
+      "pushed_time": "2026-11-03T06:22:03.428893+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-10-30T05:28:22.876497+00:00"
+  "last_email_sent_time": "2026-11-03T06:22:03.428893+00:00"
 }
