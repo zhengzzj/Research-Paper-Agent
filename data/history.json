@@ -1346,7 +1346,54 @@
       "pushed_time": "2026-11-03T06:22:03.428893+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.05181",
+      "title": "What Does the Model See? Representation Validity in Multimodal LLM-Based Video Analysis",
+      "authors": [
+        "Christian Pipal",
+        "Eva-Maria Vogel",
+        "Morgan Wack"
+      ],
+      "abstract": "Multimodal large language models (MLLMs) allow social scientists to analyze video at scale, but researchers must decide which parts of a video to provide as input. We use the term representation validity to examine how text, audio, video, and combined inputs affect measurement and subsequent analysis. We compare input representations across six open-weight MLLMs and three human-annotated video datasets. No representation consistently performs best. On seven news-related constructs, native-video performance varies little across models (macro-F1 = .70-.77), while extracted-text performance ranges from .52 to .80. Three models perform better with text and three with video. Combining inputs rarely improves performance. Higher classification accuracy also does not reliably produce estimates closer to those based on human codes. The highest-F1 representation best reproduces human-coded regression coefficients in 17 of 42 comparisons. Even when each model uses its highest-F1 deployable representation, 45% of sample-prevalence estimates differ from the human-coded benchmark by more than ten percentage points. Input representation therefore requires validation for both the construct being measured and the quantity estimated from the resulting labels.",
+      "published": "2026-11-03T16:42:49+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.05181v1",
+      "first_seen_time": "2026-11-07T05:43:46.764921+00:00",
+      "pushed_time": "2026-11-07T05:41:44.052941+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.03377",
+      "title": "Same Outputs, Different Scores: Auditing the Unchecked Graders of Multimodal LLM Benchmarks",
+      "authors": [
+        "Ahmad Jarjis Hasan",
+        "Jonathan Lwowski"
+      ],
+      "abstract": "Every multimodal-LLM multiple-choice benchmark ends with a scoring rule that converts a model's response, often free-form text rather than a clean option letter, into a right/wrong verdict, buried in its code. Unlike the dataset, this rule is chosen without justification and left unexamined, yet it sets the published number. We reproduce the official scorers of eight peer-reviewed benchmarks on five open vision-language models (VLMs) that fit a single 16 GB GPU, and introduce a blinded human-plus-LLM-judge adjudication (Cohen's kappa=0.956) that recovers what the model actually answered. The scoring rule alone moves accuracy by up to 22 points on identical outputs, yet exactly 0 wherever a model emits clean option letters, so it hides on strong-model leaderboards. It is the fallback and not the rambling that does the damage: the benchmark with the highest non-compliance we measure has an artifact of exactly zero, because its scorer abstains instead of guessing; a reasoning model with non-compliance 0.000 still swings 9.5 points with which regex match of its trace the parser keeps. No standard rule is reliable: snapping a non-answer to its closest option credits answers never given yet buries correct ones, abstention discards answers stated in words, and likelihood scoring follows answer-token priors, so a single grade conflates capability with luck rather than measuring either. We release all code, labels, and the protocol, and argue benchmarks should report a non-compliance rate and at least two rules, not one unexamined grade.",
+      "published": "2026-11-02T16:20:07+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.03377v1",
+      "first_seen_time": "2026-11-07T05:43:46.767739+00:00",
+      "pushed_time": "2026-11-07T05:41:44.052941+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2610.33451",
+      "title": "A Comprehensive Framework for All Stages of Large-Model Training: From Data and Tokenization, through Pretraining, to Post-Training Alignment",
+      "authors": [
+        "Xiangjing An",
+        "Zhibin Jiao",
+        "Aiting Chen"
+      ],
+      "abstract": "The capabilities of large language models (LLMs) and multimodal LLMs (MLLMs) arise from the synergy of the full training pipeline, including data and tokenization, pretraining, and post-training (supervised fine-tuning, preference alignment, reinforcement learning, and continual optimization), rather than any individual stage. Existing surveys mostly adopt a single-stage or single-technique perspective, treating related research as isolated systems without unified stage division or a horizontally comparable basis. This paper proposes a unified stage division and a six-dimensional analytical framework covering data, objective function, optimization strategy, system constraints, evaluation, and risk and governance. We systematically review 395 core references from 2017 to 2026, and present a conceptual map of cross-stage effects: forward constraints of pretraining on post-training, and reverse empowerment of post-training on data and pretraining. We derive three core findings. First, the comparability of scaling laws depends on data quality and mixture, a long-neglected variable. Second, preference alignment methods (RLHF, DPO) and reasoning reinforcement learning with verifiable rewards redefine post-training boundaries, while the Pass@1 versus Pass@K debate remains unresolved. Third, multimodal training poses structural challenges to the pure-text paradigm in tokenizer design, training objectives, and evaluation. The paper provides a cross-stage effects diagram, a method-family map, a practical decision tree, and at least 10 verifiable open problems, with an extensible skeleton for focused sub-surveys per stage. As of the retrieval date, peer-reviewed evidence (A+B) accounts for approximately 79% of the 395 references.",
+      "published": "2026-10-24T05:09:05+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2610.33451v1",
+      "first_seen_time": "2026-11-07T05:43:46.770432+00:00",
+      "pushed_time": "2026-11-07T05:41:44.052941+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-11-03T06:22:03.428893+00:00"
+  "last_email_sent_time": "2026-11-07T05:41:44.052941+00:00"
 }
