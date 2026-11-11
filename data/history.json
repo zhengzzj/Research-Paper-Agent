@@ -1393,7 +1393,63 @@
       "pushed_time": "2026-11-07T05:41:44.052941+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.10693",
+      "title": "Machine Hearing: Can Audio LLMs Generalize Beyond Human Auditory Perception?",
+      "authors": [
+        "Liwei Liu",
+        "Jun Tao",
+        "Xingyuan Li",
+        "Xuenan Xu",
+        "Chen Zhang",
+        "Junyi Wang",
+        "Boya Zhang",
+        "Xiaoyu Yang",
+        "Zhen-Hua Ling",
+        "Wen Wu",
+        "Chao Zhang"
+      ],
+      "abstract": "Multimodal LLMs have made remarkable progress in perceiving the physical world, while their perceptual scope remains largely human-centric, focusing on what humans can directly see or hear. This progress raises the prospect of perception beyond human limits, such as extending hearing to sounds that are inaudible to humans. More broadly, the physical world is full of waves, vibrations, and oscillations, only a small fraction of which are directly audible to humans. This invites the extension of multimodal LLMs toward a broader form of machine hearing, which remains largely underexplored. To investigate this direction, we introduce the Machine Hearing Benchmark (MHB), comprising 6,128 instances across 13 tasks and seven domains. MHB spans highly heterogeneous input regimes, with sampling rates from approximately $10^{-5}$ to $10^6$ Hz, sequence lengths from $10^1$ to $10^6$ samples, and both single- and multi-channel inputs. Evaluations of current open-source and proprietary Audio LLMs (ALLMs) reveal limited zero-shot transfer to machine hearing. Supervised adaptation on machine-hearing data alone does not close this gap, suggesting that the challenge extends beyond data exposure to a systematic mismatch between existing audio front ends and machine-hearing inputs. To address this mismatch, we introduce MachEar, a lightweight encoder extension that complements the pretrained Audio LLM for machine-hearing inputs. The results show that MachEar equips a pretrained Audio LLM with stronger machine-hearing capabilities while largely preserving its existing audio understanding performance.",
+      "published": "2026-11-07T12:23:08+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.10693v2",
+      "first_seen_time": "2026-11-11T05:51:29.483160+00:00",
+      "pushed_time": "2026-11-11T05:49:32.983053+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.08998",
+      "title": "Seeing vs. Counting: Complexity Twins Show Where Multimodal LLMs Fail on Diagrams",
+      "authors": [
+        "Yin Liu"
+      ],
+      "abstract": "When a multimodal LLM miscounts in a diagram, does it fail at seeing or at counting? Existing visual graph and puzzle benchmarks vary visual density and algorithmic hardness together, confounding the two. We pair counting questions about the same drawing that sit in different counting-complexity classes, such as its spanning trees (a determinant) and its simple paths (#P-complete), and use a transcription probe and a text-only control to separate reading from computing. We test Gemini, Gemma and Qwen3-VL models; for the Gemini models, the answer depends on how the model computes. In chain of thought, most of them read small drawings correctly and then fail at counting, at a rate set far more by the size of the answer than by its complexity class (for the primary model, the odds of an exact answer fall 2.38-fold per decade of the answer). Given code and an exact transcription, the primary model counts correctly even on 10x10 grids, and reading becomes the bottleneck: a single view misses horizontal edges, and a second reading of a rotated copy with crop checks reads 86/96 large grids exactly, against 57/96 when the upright reading is simply repeated.",
+      "published": "2026-11-06T05:17:08+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.08998v1",
+      "first_seen_time": "2026-11-11T05:51:29.485781+00:00",
+      "pushed_time": "2026-11-11T05:49:32.983053+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.08754",
+      "title": "Measurement-Aware Multimodal LLM for No-Reference Low-Dose CT Quality Assessment",
+      "authors": [
+        "Kerem Basim",
+        "Tolga Demiroglu",
+        "Mehmet Ozan Unal",
+        "Metin Ertas",
+        "Isa Yildirim"
+      ],
+      "abstract": "No-reference image quality assessment (IQA) of low-dose CT predicts the score that radiologists would assign to a slice without a full-dose reference, as needed to compare dose protocols and denoisers. Trained CT IQA networks agree well with radiologists but output only a score, whereas multimodal large language models (MLLMs) can explain a score but perform poorly on CT when only prompted. We propose a measurement-aware MLLM, built on Qwen3.8-27B, that rates a slice from its image together with six image-domain measurements of noise, sharpness, high-frequency content and streaks, given to the language model as percentiles in text. On the LDCT-IQA 2023 test set, it reaches an Overall score of 2.735, on par with the retrained challenge winner (2.735) and MedSigLIP-FiLM (2.713), and substantially above its base MLLM used as a zero-shot agent. Shuffling the measurements at test time reduces the score by 0.048, mostly through noise, but the same measurements also lead the model to assign higher scores to over-smoothed denoised images.",
+      "published": "2026-11-05T22:02:11+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.08754v1",
+      "first_seen_time": "2026-11-11T05:51:29.488262+00:00",
+      "pushed_time": "2026-11-11T05:49:32.983053+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-11-07T05:41:44.052941+00:00"
+  "last_email_sent_time": "2026-11-11T05:49:32.983053+00:00"
 }
