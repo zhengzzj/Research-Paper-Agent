@@ -1509,7 +1509,66 @@
       "pushed_time": "2026-11-15T06:00:57.214076+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.24267",
+      "title": "Look Closer, Look Back, or Wait for Agentic Streaming Video Understanding",
+      "authors": [
+        "Pengyu Li",
+        "Zhitao Gao",
+        "Lingling Zhang",
+        "Wenxuan Huang",
+        "YiCheng Xiao",
+        "Chen Zheng",
+        "Jun Liu"
+      ],
+      "abstract": "Streaming video models must answer questions about a live video under strict memory and latency limits. Feeding only the latest few frames keeps present perception sharp, whereas adding past frames dilutes attention on the current scene and triggers hallucinations. Recent cascade methods retrieve past frames when uncertain, but they still fail when current frames are blurry or when decisive future clues have not appeared yet. We introduce ActiveForager, a streaming video agent that maintains a clean short working window and gathers extra evidence only on demand. For each query, the agent either answers directly, zooms into high-resolution recent frames, recalls past events from memory, or waits for upcoming frames. When recalling history, a shared-weight sub-agent verifies candidate clips in isolation and returns a compact evidence summary. A stream-decoupled attention mask then keeps historical evidence from interfering with present visual tokens. We train this policy using counterfactual information gain, which rewards a tool call only when the gathered evidence makes the true answer more likely and prevents tool collapse across all actions. Across Qwen2.5-VL-7B and Qwen3-VL-8B on OVO-Bench, ActiveForager improves real-time perception, historical recall, and proactive response at once, lifting overall accuracy on Qwen3-VL-8B from 47.6% to 65.9%. It also doubles zero-shot accuracy on the multi-hop Video-Holmes benchmark while adding minimal visual tokens per query.",
+      "published": "2026-11-18T11:48:00+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.24267v1",
+      "first_seen_time": "2026-11-19T07:05:24.769345+00:00",
+      "pushed_time": "2026-11-19T07:01:22.626091+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.23950",
+      "title": "VOL-Agent: Programming Your Film via Video Orchestration Language Agentic System",
+      "authors": [
+        "Hongji Yang",
+        "Yucheng Zhou",
+        "Lingting Zhu",
+        "Shengju Qian",
+        "Xinye Li",
+        "Huan Zheng",
+        "Dongyue Lu",
+        "Wei Chow",
+        "Xin Wang",
+        "Cheng-zhong Xu",
+        "Jianbing Shen"
+      ],
+      "abstract": "Recent video foundation models generate high-quality and limited-length clips, but orchestrating them into minute-level, story-coherent films remains an open problem. Existing video agents highly rely on natural-language planning or predefined workflows, which make their production hard to program, customize, and extend. Therefore, we introduce VOL-Agent, a programmable video agent built on a Video Orchestration Language (VOL). With static compilation and verification, followed by runtime dynamic loading, VOL-Agent decouples structural reliability from execution flexibility. Through the skill-driven executor, VOL-Agent dynamically resolves tools and skills from an open-world repository and supports user-defined skills in natural language. Moreover, VOL-Agent is capable of crafting new director skills from learned knowledge and improves itself through feedback to accumulate filmmaking knowledge. To overcome the disconnect between different segments, we apply a structural memory mechanism to record and recall world and entity states, sustaining entity and scene consistency across different shots. Critic feedback supports local revision, while reusable filmmaking knowledge and experiences can be retained for subsequent tasks. Experiments on three benchmarks show that VOL-Agent generates minute-scale videos with strong overall quality and limited cost.",
+      "published": "2026-11-18T06:39:30+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.23950v1",
+      "first_seen_time": "2026-11-19T07:05:24.772674+00:00",
+      "pushed_time": "2026-11-19T07:01:22.626091+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.22967",
+      "title": "CodeReel: Accelerating Code-to-Video Agents with Exact Frame Reuse and Blocking-Aware Scheduling",
+      "authors": [
+        "Junyi Shen",
+        "Yao Lu"
+      ],
+      "abstract": "Coding agents make videos by writing and refining programs in a build--inspect--edit loop. A finished film costs a median of $2.85 in model calls and 11 minutes, over a third of that time in builds that block the agent. We find that much of this time is avoidable, for two reasons. First, 37.5% of the frames of a session's later films were drawn before, many shifted in time or inside an edited scene. Second, half of the builds stop at a check, where the agent needs only the verdict, but which builds stop is unknown until the checks finish. We present CodeReel, a training-free execution layer behind agents' existing commands. Exact frame reuse keys each frame by its drawing commands, regardless of its position in time, and reuses each frame whose key recurs. Blocking-aware scheduling runs the checks first and starts the render alongside them, at idle priority, unless the session's recent builds make a pass unlikely. Scheduling spends CPU to answer sooner and reuse returns it; exact keys let later versions use frames rendered for a failed one as the agent thinks. We introduce EditLoop, a benchmark of replayable agent sessions whose films are checked against renders from scratch. On it, CodeReel cuts the agent's wait by 36.3% against Rebuild, a warm pipeline with parallel rendering, and by 57.9% against Sequential, today's step-by-step pipeline. On time-shifting edits its reuse renders 43.9%, close to the 43.0% whose pixels are new, while Manim-style caching renders 99.8%. With real agents, the median wait per build is 0.62x Rebuild's in Claude Code, on topics never used in development, and 0.67x in Codex CLI. The gain holds for five models and two frameworks.",
+      "published": "2026-11-17T15:52:15+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.22967v1",
+      "first_seen_time": "2026-11-19T07:05:24.779811+00:00",
+      "pushed_time": "2026-11-19T07:01:22.626091+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-11-15T06:00:57.214076+00:00"
+  "last_email_sent_time": "2026-11-19T07:01:22.626091+00:00"
 }
