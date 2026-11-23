@@ -1568,7 +1568,69 @@
       "pushed_time": "2026-11-19T07:01:22.626091+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.27646",
+      "title": "MoHA: Model-Conditioned Harness Adaptation for Long-Video Agents",
+      "authors": [
+        "Jianghan Chao",
+        "Wenhui Tan",
+        "Hang Su",
+        "Qiuyu Tian",
+        "Tanxiao Li",
+        "Bingzi Zhang",
+        "Zequn Liu",
+        "Ruihua Song",
+        "Yingce Xia"
+      ],
+      "abstract": "Long-video understanding increasingly relies on agentic systems that actively acquire evidence rather than process fixed video representations. Their execution harnesses must coordinate language-level planning with video-level observation and evidence acquisition, yet are typically fixed across model stacks. We therefore introduce MoHA, a framework for model-conditioned harness adaptation that adapts a common initial execution harness to the specific planner and observer models it hosts. MoHA treats the harness itself as a model-conditioned optimization object: under the same task distribution and initialization, different planner-observer stacks can benefit from different executable harnesses. Starting from a common initial harness, MoHA analyzes failed calibration traces to diagnose model-harness mismatches and adapts both planner-side reasoning support, such as overview, memory, and verification, and observer-side capability assignments, including OCR and ASR specialists. After structural adaptation, MoHA separately calibrates observer execution configurations for the hosted model stack. Across three frozen planner stacks, MoHA improves Video-MME Full accuracy by 6.2-27.1 percentage points and Video-Holmes accuracy by 3.1-20.1 points over the fixed initial harness. Cross-model transfer further shows that the adapted harnesses generalize only partially to other models, highlighting the harness as a model-conditioned optimization layer for long-video understanding. Code is available at https://github.com/roverx12345/MoHA.",
+      "published": "2026-11-20T14:09:38+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.27646v1",
+      "first_seen_time": "2026-11-23T07:13:02.000260+00:00",
+      "pushed_time": "2026-11-23T07:11:17.687325+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.26024",
+      "title": "ForeSeek: Foresight-Driven Reasoning for Long-Form Video Understanding",
+      "authors": [
+        "Yuchen Sun",
+        "Siyuan Cheng",
+        "Shi-Zhe Chen",
+        "Yixin Qin",
+        "Jinwen Luo",
+        "Zheng Wei"
+      ],
+      "abstract": "Long-form video understanding, as a fundamental yet crucial vision task, is being revolutionized by multimodal large language model (MLLM)-based video agents. However, the retrieval-driven nature inherent to these agents creates a significant bottleneck, forcing them to reactively fetch clips based on local saliency without a global temporal plan. To address this, we present ForeSeek, a foresight-driven video agent that transforms long-video reasoning from reactive retrieval into predictive exploration. Rather than blindly probing the timeline, ForeSeek forms visually grounded expectations over unseen temporal regions, verifies them through targeted observations, and continuously refines its search based on emerging evidence, where failed expectations serve as informative signals for principled backtracking. Furthermore, we develop a two-stage training framework that equips MLLMs with foresight-guided reasoning and efficient decision making. Extensive experiments on five long-video benchmarks demonstrate that ForeSeek consistently improves the efficiency--accuracy trade-off of long-video reasoning, achieving competitive or superior accuracy while observing $2.5$--$4.4\\times$ fewer frames than the strongest search-based agent. Code is available at https://github.com/harry0021/ForeSeek",
+      "published": "2026-11-19T12:37:52+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.26024v1",
+      "first_seen_time": "2026-11-23T07:13:02.003285+00:00",
+      "pushed_time": "2026-11-23T07:11:17.687325+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.21553",
+      "title": "BLIP-Live: Balancing Timeliness & Firing Precision in Proactive Streaming Video Agents",
+      "authors": [
+        "Kanchana Ranasinghe",
+        "Honglu Zhou",
+        "Dominick Reilly",
+        "Le Xue",
+        "Shusheng Yang",
+        "Juan Carlos Niebles",
+        "Silvio Savarese",
+        "Ran Xu"
+      ],
+      "abstract": "Streaming video understanding is becoming increasingly important for real-world interactive systems. Such systems must be proactive for natural and useful human interaction: they should respond as soon as sufficient evidence becomes available while avoiding premature, redundant, or incorrect responses. We present BLIP-Live, a framework unifying data, metrics, harness, and training around a shared formulation of proactivity as effective causal response decisions balancing the two competing objectives of responding vs silence. First, we construct BLIP-Live-780K dataset containing human annotations of proactive response content and timing, which defines this desired behavior. We then propose PAUC-F, a metric to effectively measure our desired proactive behavior. PAUC-F combines existing response timeliness metrics with firing precision to reward early useful responses without rewarding excessive firing. With our desired behavior defined and measurable, we finally investigate model-agnostic inference harnesses that draw out proactive streaming capabilities of offline vision language models (VLMs), together with training pipelines that learn to further improve their proactive responsiveness. Across both settings, we find that combinations of sliding visual windows, online interaction memory, and structured response outputs consistently yield strongest proactive performance. Our experiments result in two models, with our BLIP-Live-Qwen model achieving state-of-the-art performance across four proactive streaming benchmarks, with gains up to 44% over baselines and outperforming multiple closed API models. Our code and data will be released publicly.",
+      "published": "2026-11-16T18:33:47+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.21553v1",
+      "first_seen_time": "2026-11-23T07:13:02.006083+00:00",
+      "pushed_time": "2026-11-23T07:11:17.687325+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-11-19T07:01:22.626091+00:00"
+  "last_email_sent_time": "2026-11-23T07:11:17.687325+00:00"
 }
