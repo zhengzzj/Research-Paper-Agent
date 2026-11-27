@@ -1630,7 +1630,63 @@
       "pushed_time": "2026-11-23T07:11:17.687325+00:00",
       "quality_score": null,
       "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.33808",
+      "title": "EvoVAU: Tool Evolution for Video Anomaly Understanding",
+      "authors": [
+        "Benfeng Wang",
+        "Chao Huang",
+        "Yudong Cheng",
+        "Chengliang Liu",
+        "Wei Wang",
+        "Wenqi Ren"
+      ],
+      "abstract": "Video anomaly understanding (VAU) requires reasoning about event progression, interactions, and the contextual conditions that distinguish abnormal behavior from common activity across diverse scenes. Although video agents enable multi-round analysis, the predefined analytical operations may not adequately satisfy these diverse reasoning demands. In this paper, we present EvoVAU, a framework that evolves a reusable tool library for a frozen video solver. Guided by task outcomes and execution trajectories, an external proposer identifies potential limitations in the library and refines it, retaining task experience as analytical operations that can be reused across questions. Specifically, Cross-Version Contrastive Feedback guides tool refinement by combining current errors with paired execution trajectories from historical corrections and regressions. Adoption-Aware Selection accepts a candidate library only when overall development-set accuracy improves and corrections outnumber regressions among questions on which the solver invokes new or modified tools. Using a small development set, EvoVAU alternates tool refinement with candidate evaluation and selection. At test time, the evolved library remains fixed, with no further involvement from the proposer. Experiments on several VAU benchmarks demonstrate strong performance and the flexibility of the evolved library across anomaly domains.",
+      "published": "2026-11-25T05:38:46+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.33808v1",
+      "first_seen_time": "2026-11-27T07:59:24.377519+00:00",
+      "pushed_time": "2026-11-27T07:57:37.715573+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.31891",
+      "title": "Open-OmniCoach: Evidence-Enhanced Trajectory Learning for Omni Video Agents",
+      "authors": [
+        "Weisong Liu",
+        "Xiangtai Li",
+        "Haochen Wang",
+        "Haiquan Wen",
+        "Zhaoxiang Zhang"
+      ],
+      "abstract": "Training capable omni video agents requires more than diverse question-answer pairs: agents must learn to reliably find, connect, and correct task-relevant evidence in omni-setting. However, we argue that existing data pipelines provide limited control over task-relevant evidence and weak supervision for these capabilities. In this work, we present Open OmniCoach, a new framework for evidence-seeking omni video agents. It contains a high-quality dataset, OmniCoach-240K, and a new agentic reinforcement learning (RL) method, Step-Level Evidence-Guided Policy Optimization (SEPO). For the former, OmniCoach-240K comprises 248.2K interaction trajectories, including 230.7K multi-span trajectories and 17.4K reflection trajectories. We design a three-stage data pipeline by leveraging both fine-grained omni-evidence and the agent's own errors. Meanwhile, compared with other RL baselines, SEPO provides turn-level credit based on improvements in evidence coverage and temporal localization. Applying both trajectory data and the SEPO method, we obtain Open OmniAgent models. The resulting models outperform the baselines across multiple video and audio-visual understanding tasks by significant margins, demonstrating the effectiveness of the Open OmniCoach framework. In particular, Open OmniAgent-30B improves average accuracy over Qwen3-Omni by 6.3 percentage points across nine benchmarks, with gains of 12.2 and 13.3 points on LVOmniBench and LVBench, respectively.",
+      "published": "2026-11-24T03:49:35+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.31891v1",
+      "first_seen_time": "2026-11-27T07:59:24.380787+00:00",
+      "pushed_time": "2026-11-27T07:57:37.715573+00:00",
+      "quality_score": null,
+      "relevance_score": null
+    },
+    {
+      "arxiv_id": "2611.31883",
+      "title": "Rethinking Video Agents: When and Why Video Harnesses Work",
+      "authors": [
+        "Luoyuan Zhang",
+        "Xuanyu Zheng",
+        "Yancheng Long",
+        "Haoyang Xu",
+        "Bin Wen",
+        "Tingting Gao"
+      ],
+      "abstract": "Video understanding depends not only on how models reason about visual evidence, but also on which evidence they observe. Fixed observation policies determine this evidence in advance; agentic harnesses allow models to seek further observations as their understanding develops. This shift creates an opportunity to realize capabilities that fixed inputs leave untapped, yet the ability to request observations does not ensure their effective use. We investigate when and why video harnesses improve understanding, examining how task demands and models' capacity for interaction jointly shape their benefits. Using Video-Relook as an experimental framework, we let models adapt their temporal and spatial observations from a common default configuration, and analyze performance and interaction trajectories across models and tasks. Adaptive observation yields substantial gains on fine-grained action understanding, with benefits also extending to Video-MME-v2. Even under the same observation interface, gains differ substantially across models; interaction traces reveal corresponding differences in evidence seeking and the reliability of answer revision. The benefits also vary across tasks for the same model, ranging from substantial improvements to limited gains and regressions. Together, these findings support an account in which harness effectiveness depends on the alignment between opportunities for informative observation and the model's ability to turn interaction into reliable revisions. They motivate video harnesses that coordinate perception and reasoning, matching observational autonomy to task demands and model capabilities.",
+      "published": "2026-11-24T03:43:32+00:00",
+      "pdf_url": "https://arxiv.org/pdf/2611.31883v1",
+      "first_seen_time": "2026-11-27T07:59:24.383862+00:00",
+      "pushed_time": "2026-11-27T07:57:37.715573+00:00",
+      "quality_score": null,
+      "relevance_score": null
     }
   ],
-  "last_email_sent_time": "2026-11-23T07:11:17.687325+00:00"
+  "last_email_sent_time": "2026-11-27T07:57:37.715573+00:00"
 }
